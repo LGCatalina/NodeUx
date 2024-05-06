@@ -55,14 +55,35 @@
             </li>
         </ul>    
     </nav>
-    <div class="container justify-content-center" id="container_puntos">
-        <h1>hola</h1>
+    <!-- <img src="./img/Dark Patterns.png" class="img-fluid" alt="" id="dark_patterns"> -->
+    <div class="container d-flex justify-content-between align-items-center" style="min-height: 100vh;" id="container_puntos">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Primera parte -->
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="circulo" onmouseover="mostrarImagen('.img/Dark Patterns.png')" onmouseout="ocultarImagen()" id="circulo_arriba"></div>
+                    <div class="circulo" onmouseover="mostrarImagen('.img/Diseño.png')" onmouseout="ocultarImagen()" id="circulo_arriba"></div>
+                    <div class="circulo" onmouseover="mostrarImagen('imagen3.jpg')" onmouseout="ocultarImagen()" id="circulo_arriba"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!-- Segunda parte -->
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="circulo" id="circulo_abajo"></div>
+                    <div class="circulo" id="circulo_abajo"></div>
+                    <div class="circulo" id="circulo_abajo"></div>
+                </div>
+            </div>
+        </div>
     </div>
-
     <!-- Bootstrap scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <!-- Incluir el script del navbar -->
+    <script src="./js/script.js"></script>
     <script src="complementos/navbar.js"></script>
 </body>
 </html>
