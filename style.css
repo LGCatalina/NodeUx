@@ -1,6 +1,36 @@
-.body{
-    background-color: #3D494E;
+body {
+    background-color: #3D494E !important;
 }
-#nav{
-    background-color: #3D494E;
+
+#nav_texto{
+    color: #ffffff;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+}
+
+#nav_conceptos,
+#nav_ejemplos,
+#nav_acerca {
+    color: #ffffff;
+}
+
+/* Cambiar el color de fondo de la barra del menú desplegable */
+.dropdown-menu {
+    background-color: #A5D7D7; /* Cambia el color de fondo aquí */
+}
+
+/* Cambiar el color del texto dentro del menú desplegable */
+.dropdown-menu .dropdown-item {
+    color: #3D494E; /* Cambia el color del texto aquí */
+}
+
+/* Estilos para el nav-item dropdown cuando está activo */
+.nav-item.dropdown.active .nav-link {
+    background-color: #A5D7D7; /* Cambia el color de fondo al hacer clic */
+    color: #ffffff; /* Cambia el color del texto al hacer clic */
+}
+
+#container_puntos{
+    margin-left: 70px;
+    margin-right: 70px;
 }
