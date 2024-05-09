@@ -1,0 +1,17 @@
+body {
+    background-color: #3D494E !important;
+}
+
+#container_principal{
+    background-color: #13847E;
+    width: 1141px;
+    height: 717px;
+}
+
+.circulo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Hace que el elemento sea un círculo */
+    background-color: white; /* Color del círculo */
+    margin: 0 20px; /* Espacio entre círculos */
+}
