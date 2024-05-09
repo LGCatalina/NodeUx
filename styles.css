@@ -8,10 +8,24 @@ body {
     height: 717px;
 }
 
-.circulo{
+.circle{
     width: 50px;
     height: 50px;
     border-radius: 50%; /* Hace que el elemento sea un círculo */
     background-color: white; /* Color del círculo */
-    margin: 0 20px; /* Espacio entre círculos */
+    margin: 20px; /* Espacio entre círculos */
+
+}
+
+@media (max-width: 1024px){
+    #container_principal{
+        width: 80%;
+        height: auto;
+    }
+}
+@media (max-width: 425px){
+    #container_principal{
+        width: 90%;
+        height: auto;
+    }
 }
