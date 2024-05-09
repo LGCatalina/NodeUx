@@ -1,12 +1,45 @@
+body {
+    background-color: #3D494E !important;
+    color: #13847E;
+}
+#container_principal{
+    background-color: #ffffff;
+    border: 20px solid #13847E;
+    width: 800px;
+    height: 1500px;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los cuadros se envuelvan cuando no hay suficiente espacio */
+    justify-content: space-between;
+}
+
+h3{
+    padding-bottom: 20px;
+}
+
+h2 {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+p {
+  width: 500px;
+  padding-bottom: 60px;
+}
+
+body {
+    margin: 0; /* Elimina los márgenes predeterminados del cuerpo */
+    padding: 0; /* Elimina los rellenos predeterminados del cuerpo */
+  }
+
 .contenedor {
     display: flex;
     justify-content: space-between;
 }
 
 .cuadro {
-    width: 200px;
+    width: 100px;
     padding: 20px;
-    height: 100px;
+    height: 150px;
     background-color: #f0f0f0;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -19,7 +52,38 @@
 }
 
 .cuadro h3 {
-    margin-top: 10px;
+    margin-top: 120px;
     font-size: 18px;
     color: #333;
 }
+
+.cuadro {
+    width: calc(33.33% - 20px); /* Tamaño inicial del cuadro, con margen entre ellos */
+    margin-top: 30px;
+    margin-left: 10px;
+    padding: 40px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .cuadro img {
+    width: 100%;
+    max-width: 100%; /* Asegura que la imagen no supere el ancho del cuadro */
+    border-radius: 5px;
+  }
+  
+  .cuadro h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  /* Media queries para ajustar el diseño en diferentes tamaños de pantalla */
+  @media screen and (max-width: 768px) {
+    .cuadro {
+      width: calc(50% - 20px); /* Dos cuadros por fila en pantallas medianas */
+    }
+  }
+  
