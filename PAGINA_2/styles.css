@@ -36,6 +36,7 @@ nav{
     display: flex;
     justify-content: center;
 }
+
 .circle{
     width: 50px;
     height: 50px;
@@ -46,7 +47,7 @@ nav{
 }
 
 .contenedorfranja {
- margin-top: 50px;
+ margin-top: 60px;
  height: 200px;
  background: linear-gradient(#0D5552,#A3D4D2,#0E1720);
 }
@@ -54,7 +55,7 @@ nav{
 #subtitulo1{
     color: rgb(255, 255, 255);
     text-align: center;
-    margin-top: 200px;
+    margin-top: 100px;
     padding-top: 80px;
 }
 
@@ -66,22 +67,14 @@ nav{
     color: white;
     }
 
-h2 { 
+#containertexto{
     color: white;
+    text-align: left;
 }
 
-
-    .contenedor-imagenes {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
-        gap: 10px; 
-        justify-content: center; 
-    }
-    
-    .contenedor-imagenes img {
-        max-width: 100%; 
-        height: auto; 
-    }
+#textocentrado {
+    text-align: center;
+  }
 
 @media (max-width: 1024px){
     #container_principal{
