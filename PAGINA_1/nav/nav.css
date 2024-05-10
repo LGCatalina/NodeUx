@@ -1,5 +1,5 @@
 #nav{
-    
+    height: 120px;
 }
 #nav_texto{
     color: #ffffff;
@@ -7,10 +7,17 @@
     margin-block-end: 10px;
 }
 
+#nav_home{
+    font-size: 80px;
+    color: #ffffff;
+    justify-content: center;
+}
+
 #nav_conceptos,
 #nav_ejemplos,
 #nav_acerca {
     color: #ffffff;
+    font-size: 25px;
 }
 
 /* Cambiar el color de fondo de la barra del menú desplegable */
