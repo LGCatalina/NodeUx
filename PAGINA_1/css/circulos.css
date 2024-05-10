@@ -1,0 +1,18 @@
+.rectangulo{
+    width: 157px;
+    height: 48px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+#circulo_blanco{
+    background-color: white;
+    font-size: 20px;
+    color:#0F8F89;
+}
+
+#circulo_bordes{
+    border: white 2px dashed;
+    background-color: #0F8F89;
+    color: white;
+}
