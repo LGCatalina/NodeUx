@@ -53,16 +53,16 @@ nav{
 }
 
 #subtitulo1{
-    color: rgb(255, 255, 255);
+    color: #0E1720;
     text-align: center;
-    margin-top: 100px;
     padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 #textocentral {
     width: 400px;
     margin-top: 100px;
-    padding-bottom: 60px;
+    padding-bottom: 100px;
     text-align: center;
     color: white;
     }
@@ -70,7 +70,19 @@ nav{
 #containertexto{
     color: white;
     text-align: left;
+    margin-left: 50px;
 }
+
+#textointroductorio {
+    width: 400px;
+    margin-top: 100px;
+    padding-bottom: 100px;
+    margin-left: 52px;
+    text-align: justify;
+    text-align: left;
+    color: white;
+}
+
 
 #textocentrado {
     text-align: center;
@@ -109,13 +121,15 @@ nav{
   }
   
   .cuadroboton {
-        width: 350px; /* Ancho del cuadro */
+        width: 300px; /* Ancho del cuadro */
         height: 20px; /* Altura del cuadro */
         background-color: #A3D4D2; /* Color de fondo del cuadro */
         padding: 80px;
         box-sizing: border-box; /* Asegura que el ancho del borde esté incluido en el tamaño total */
         margin: 40px; /* Agrega margen de 20px entre los cuadros */
+        align-items: center;
         text-align: center; /* Alinea el texto al centro */
+        padding-top: 10px;
       }
   
   /* Estilos adicionales para el texto dentro de los cuadros */
@@ -124,3 +138,10 @@ nav{
     color: #0D5552;
 
   }
+
+  #subtitulo2{
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
