@@ -92,3 +92,35 @@ nav{
         height: 20px;
     }
 }
+
+#franja {
+    width: 100%; /* Ancho completo */
+    height: 100px; /* Altura de la franja */
+    background: linear-gradient(to right, #0D5552, #0E1720); /* Gradiente lineal */
+  }
+   
+
+  .contenedorfranja {
+    display: flex; /* Utiliza Flexbox para crear una fila */
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    height: 100%; /* Ocupa toda la altura de la ventana */
+  }
+  
+  .cuadroboton {
+        width: 350px; /* Ancho del cuadro */
+        height: 20px; /* Altura del cuadro */
+        background-color: #A3D4D2; /* Color de fondo del cuadro */
+        padding: 80px;
+        box-sizing: border-box; /* Asegura que el ancho del borde esté incluido en el tamaño total */
+        margin: 40px; /* Agrega margen de 20px entre los cuadros */
+        text-align: center; /* Alinea el texto al centro */
+      }
+  
+  /* Estilos adicionales para el texto dentro de los cuadros */
+  .cuadroboton h2 {
+    text-align: center;
+    color: #0D5552;
+
+  }
