@@ -1,0 +1,58 @@
+body {
+    background-color: #3D494E !important;
+    color: #13847E;
+    margin: 0; 
+    padding: 0;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+#container_principal{
+    background-color: #ffffff;
+    border: 20px solid #0E1720;
+    margin-left:auto;
+    margin-right:auto;
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#categorias h3{
+  padding-bottom: 20px;
+}
+
+#categorias h2 {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+#categorias p {
+  width: auto;
+  padding-bottom: 60px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+  @media screen and (max-width: 768px) {
+  .cuadro {
+    width: calc(50% - 20px); 
+  }
+  }
+
+  @media (max-width: 1024px){
+  #container_principal{
+    width: 80%;
+    height: auto;
+  }
+  }
+  @media (max-width: 425px){
+  #container_principal{
+    width: 90%;
+    height: auto;
+  }
+  h3{
+    font-size:larger;
+  }
+  }

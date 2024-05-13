@@ -1,6 +1,7 @@
 body {
     background-color: #0E1720 !important;
     max-height: 712px;
+    font-family: "Bebas Neue", sans-serif;
 }
 
 h1{
@@ -9,30 +10,19 @@ h1{
     right: 800px;
 }
 
-nav{
-    background-color: #0D5552;
+/* CIRCULOS */
+#container_principal{
+    height: 1281px;
 }
 
-#nav_ejemplos{
-    color: rgb(255, 255, 255);
-}
-
-#nav_acerca{
-    color: rgb(255, 255, 255);
-}
-
-#nav_conceptos{
-    color: rgb(255, 255, 255);
-}
-
-#row_1{
+#row_circulos_1{
     transform: translate(0px, 166px);
 }
-#row_2{
+#row_circulos_2{
     transform: translate(0px, 544px);
 }
 
-.col{
+#col_circulos{
     display: flex;
     justify-content: center;
 }
@@ -46,47 +36,139 @@ nav{
 
 }
 
-.contenedorfranja {
- margin-top: 60px;
- height: 200px;
- background: linear-gradient(#0D5552,#A3D4D2,#0E1720);
+/* franja_1 */
+#franja_1{
+    height: 299px;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+    background: linear-gradient(#13847E,#0E1720);
 }
 
-#subtitulo1{
+#franja_1 h2{
+    font-size: 80px;
     color: #0E1720;
     text-align: center;
     padding-top: 80px;
     padding-bottom: 80px;
+    display: flex;
+    align-items: center;
 }
 
+/* textocentral */
 #textocentral {
-    width: 400px;
-    margin-top: 100px;
-    padding-bottom: 100px;
+    width: 602px;
+    height: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    color: white;
-    }
-
-#containertexto{
-    color: white;
-    text-align: left;
-    margin-left: 50px;
 }
 
-#textointroductorio {
-    width: 400px;
-    margin-top: 100px;
-    padding-bottom: 100px;
-    margin-left: 52px;
-    text-align: justify;
-    text-align: left;
+#textocentral p{
+    margin: 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 20px;
     color: white;
 }
 
+/* texto diseño */
+#texto_diseño{
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
-#textocentrado {
-    text-align: center;
-  }
+#texto_diseño h2{
+    margin-bottom: 40px;
+    font-size: 50px;
+}
+
+#texto_diseño p{
+    width: 492px;
+    font-size: 22px;
+}
+
+#tipos,
+#diseño,
+#campo_laboral,
+#informacion_usuario{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* franja_2 */
+#franja_2{
+    display: flex;
+    height: 200px;
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    background: linear-gradient(#13847E,#0E1720);
+}
+
+#franja_2_contenido{
+    width: 381px;
+    height: 111px;
+    background-color: #A3D4D2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#franja_2_contenido h2 {
+    color: #0D5552;
+    font-size: 50px;
+    margin: 0px;
+}
+
+/* objetivo */
+#objetivo{
+    color: white;
+}
+
+#objetivo h2{
+    margin: 5%;
+    font-size: 70px;
+    color: #A3D4D2;
+    display: flex;
+    justify-content: center;
+}
+
+#objetivo #texto{
+    margin: 10%;
+}
+
+#objetivo .col{
+    width: 330px;
+    height: 336px;
+    border: 2px solid #A3D4D2;
+    margin: 10px;
+    display: flex;
+    flex-direction: column; /* Alinear el contenido verticalmente */
+    justify-content: center; /* Centra verticalmente */
+    align-items: flex-start; /* Alinea el texto a la izquierda */
+    padding: 20px; /* Espaciado interno */
+}
+
+#objetivo h4{
+    font-size: 22px;
+    color: #A3D4D2;
+}
+#objetivo h3{
+    font-size: 30px;
+}
+#objetivo p{
+    font-size: 18px;
+}
 
 @media (max-width: 1024px){
     #container_principal{
@@ -94,6 +176,14 @@ nav{
         height: auto;
     }
 }
+
+@media (max-width: 768px){
+    #container_principal{
+        width: 80%;
+        height: auto;
+    }
+}
+
 @media (max-width: 425px){
     #container_principal{
         width: 90%;
@@ -103,45 +193,4 @@ nav{
         width: 20px;
         height: 20px;
     }
-}
-
-#franja {
-    width: 100%; /* Ancho completo */
-    height: 100px; /* Altura de la franja */
-    background: linear-gradient(to right, #0D5552, #0E1720); /* Gradiente lineal */
-  }
-   
-
-  .contenedorfranja {
-    display: flex; /* Utiliza Flexbox para crear una fila */
-    display: flex;
-    justify-content: center; /* Centra los elementos horizontalmente */
-    align-items: center; /* Centra los elementos verticalmente */
-    height: 100%; /* Ocupa toda la altura de la ventana */
-  }
-  
-  .cuadroboton {
-        width: 300px; /* Ancho del cuadro */
-        height: 20px; /* Altura del cuadro */
-        background-color: #A3D4D2; /* Color de fondo del cuadro */
-        padding: 80px;
-        box-sizing: border-box; /* Asegura que el ancho del borde esté incluido en el tamaño total */
-        margin: 40px; /* Agrega margen de 20px entre los cuadros */
-        align-items: center;
-        text-align: center; /* Alinea el texto al centro */
-        padding-top: 10px;
-      }
-  
-  /* Estilos adicionales para el texto dentro de los cuadros */
-  .cuadroboton h2 {
-    text-align: center;
-    color: #0D5552;
-
-  }
-
-  #subtitulo2{
-    color: white;
-    text-align: center;
-    padding-top: 80px;
-    padding-bottom: 80px;
 }
