@@ -81,13 +81,15 @@ body {
   font-size: 22;
   padding-left: 30px;
   padding-right: 30px;
+  text-align: left;
+  max-width: 800px;
 }
 #contenido-manipulacion h3{
   font-size: 33;
 }
 
 #contenido-manipulacion #cuado_interactivo{
-  background-color: #B9B6B6;
+  background-color: #13847E;
   max-width: 550px;
   height: 350px;
   margin-bottom: 30px;
