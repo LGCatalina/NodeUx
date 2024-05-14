@@ -22,3 +22,8 @@ footer{
     font-size: 18px;
 }
 
+@media (max-width: 1206px){
+    .row .col-4 p{
+        width: auto;
+    }
+}

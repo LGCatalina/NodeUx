@@ -1,6 +1,9 @@
 nav{
     font-family: "Bebas Neue", sans-serif;
     height: 170px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
 }
 
 nav.sticky{
