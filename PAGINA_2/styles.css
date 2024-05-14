@@ -3,7 +3,13 @@ body {
     font-family: "Bebas Neue", sans-serif;
     margin: 0; 
     padding: 0;
+    background-image: url("/PAGINA_2/img/fondo1.jpg");
+    background-size: contain;
+    background-size: 1880px;
+    background-repeat: no-repeat;
+    background-position: top;
 }
+
 
 h1{
     color: rgb(255, 255, 255);
@@ -59,10 +65,12 @@ h1{
 
 /* textocentral */
 #textocentral {
-    max-width: 600px; /* Establecemos un ancho máximo */
+    font-family: "Nunito Sans", sans-serif;
+    max-width: 800px; /* Establecemos un ancho máximo */
     margin: 50px auto; /* Centramos vertical y horizontalmente */
     padding: 0 20px; /* Añadimos un poco de espacio interno */
-    text-align: center; /* Centramos el texto */
+    text-align: center;
+    font-size: 12px; 
 }
 
 #textocentral p {
@@ -93,8 +101,15 @@ h1{
 #diseño,
 #campo_laboral,
 #informacion_usuario{
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#tipos p,
+#diseño p,
+#campo_laboral p,
+#informacion_usuario p{
+    font-family: "Nunito Sans", sans-serif;
 }
 
 /* franja_2 */
@@ -162,6 +177,15 @@ h1{
 }
 #objetivo p{
     font-size: 18px;
+}
+
+#containerfondo {
+    display: flex;
+}
+
+
+#BOTONventana {
+    width: 500px;
 }
 
 @media (max-width: 375.98px) {

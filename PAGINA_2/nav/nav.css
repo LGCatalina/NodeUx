@@ -1,4 +1,4 @@
-nav{
+.navbar{
     font-family: "Bebas Neue", sans-serif;
     height: 170px;
     margin-left: 100px;
@@ -6,7 +6,7 @@ nav{
     display: flex;
 }
 
-nav.sticky{
+.navbar.sticky{
     background-color: #A5D7D7;
     height: 100px;
 }
