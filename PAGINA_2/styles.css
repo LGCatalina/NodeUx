@@ -5,7 +5,7 @@ body {
     padding: 0;
     background-image: url("/PAGINA_2/img/fondo1.jpg");
     background-size: contain;
-    background-size: 1880px;
+    background-size: 1940px;
     background-repeat: no-repeat;
     background-position: top;
 }
@@ -52,19 +52,27 @@ h1{
 #rectangulo_3,
 #rectangulo_5 {
 
-    width: 120px; /* Ancho del rectángulo */
-    height: 40px; /* Altura del rectángulo */
-    background-color: #A3D4D2; /* Color de fondo del rectángulo */
-    border-radius: 20px; /* Eliminar bordes redondeados para hacerlo un rectángulo */
+    width: 120px; 
+    height: 40px; 
+    background-color: #A3D4D2; 
+    border-radius: 20px; 
 }
 
 .rectangulo {
-    width: 120px; /* Ancho del rectángulo */
-    height: 80px; /* Altura del rectángulo */
-    background-color: #A3D4D2; /* Color de fondo del rectángulo */
-    border-radius: 20px; /* Eliminar bordes redondeados para hacerlo un rectángulo */
+    width: 120px; 
+    height: 80px; 
+    background-color: #A3D4D2; 
+    border-radius: 20px; 
 }
 
+.rectangulopestaña {
+    width: 200px; 
+    height: 40px; 
+    background-color: #13847E;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 
 #franja_1{
     max-width: 100%;
