@@ -168,6 +168,10 @@ h1{
     font-size: 50px;
     margin: 0px;
 }
+#franja_2_contenido .link-sin-estilo {
+    color: inherit; /* Usa el color del texto del contenedor */
+    text-decoration: none; /* Quita el subrayado */
+  }
 
 /* objetivo */
 #objetivo {

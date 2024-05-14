@@ -20,6 +20,7 @@ body {
     min-height: 100vh;
     background-color: #ffffff;
     flex-wrap: wrap;
+    padding: 20px;
 }
 
 #containertitulo h2{
@@ -51,7 +52,7 @@ body {
   padding-bottom: 60px;
 }
 
-#container_doble h3{
+#container_doble button{
   padding-top: 40px;
   padding-bottom: 40px;
   margin-left: 40px;
@@ -63,9 +64,50 @@ body {
   margin-left: 40px;
 }
 
+/* contenido oculto */
+.contenido {
+  padding: 10px;
+  background-color: #A3D4D2; /* Cambia el color de fondo del contenido oculto */
+  height: calc(100% - 40px);
+  overflow-y: auto; /* Agrega un desplazamiento vertical si el contenido es demasiado grande */
+  margin-bottom: 20px;
+}
 
-.text-center {
-    text-align: center;
+#contenido-manipulacion h2{
+  font-size: 50;
+  margin-left: 0%;
+}
+#contenido-manipulacion p{
+  font-size: 22;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#contenido-manipulacion h3{
+  font-size: 33;
+}
+
+#contenido-manipulacion #cuado_interactivo{
+  background-color: #B9B6B6;
+  max-width: 550px;
+  height: 350px;
+  margin-bottom: 30px;
+}
+
+#contenido-manipulacion #more{
+  
+}
+
+
+/* Estilo del triángulo */
+.triangulo {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #000; /* Cambia el color del triángulo si lo deseas */
+  margin-left: 5px; /* Ajusta el margen según sea necesario */
+  cursor: pointer;
 }
 
 .rectangulocierre {
