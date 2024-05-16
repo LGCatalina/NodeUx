@@ -28,10 +28,6 @@ main{
     padding: 0px;
 }
 
-#titulo-manipulacion h3{
-  margin-left: 80px;
-}
-
 #containertitulo h2{
   padding-top: 40px;
   margin-bottom: 40px;
@@ -44,7 +40,6 @@ main{
   margin: 50px auto;
   padding: 0 20px;
   text-align: left;
-  font-family: "Nunito Sans", sans-serif;
 }
 
 #categorias h3{
@@ -55,15 +50,12 @@ main{
 #categorias h2 {
   padding-top: 40px;
   padding-bottom: 40px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 40px;
 }
 
 #categorias p {
   width: auto;
   padding-bottom: 60px;
-  font-family: "Nunito Sans", sans-serif;
-
 }
 
 #container_doble button{
@@ -76,60 +68,40 @@ main{
   padding-top: 40px;
   padding-bottom: 40px;
   margin-left: 40px;
-  font-family: "Nunito Sans", sans-serif;
 }
 
 /* contenido oculto */
-
-.contenido-oculto{
-  background-color: #A3D4D2;
-}
-
-H2{
-  padding-top: 40PX;
+.contenido {
+  padding: 10px;
+  background-color: #A3D4D2; /* Cambia el color de fondo del contenido oculto */
+  height: calc(100% - 40px);
+  overflow-y: auto; /* Agrega un desplazamiento vertical si el contenido es demasiado grande */
+  margin-bottom: 20px;
 }
 
 #contenido-manipulacion #contenido-emocional,
  h2{
   font-size: 50;
-  margin-left: 40px;
+  margin-left: 0%;
 }
 #contenido-manipulacion p{
   font-size: 22;
-  padding-left: 200px;
+  padding-left: 30px;
   padding-right: 30px;
   text-align: left;
   max-width: 800px;
-  font-family: "Nunito Sans", sans-serif;
 }
 #contenido-manipulacion h3{
   font-size: 33;
-  padding-left: 40px;
 }
-
-#contenido-emocional p{
-  font-size: 22;
-  padding-left: 200px;
-  padding-right: 30px;
-  text-align: left;
-  max-width: 800px;
-  font-family: "Nunito Sans", sans-serif;
-}
-
-#contenido-emocional h3{
-  font-size: 33;
-  padding-left: 40px;
-}
-
 
 #contenido-manipulacion #contenido-emocional,
  #cuado_interactivo{
   background-color: #13847E;
   max-width: 550px;
   height: 350px;
-  padding-bottom: 40px;
+  margin-bottom: 30px;
 }
-
 
 
 /* Estilo del triángulo */
