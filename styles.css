@@ -5,7 +5,7 @@ body {
     padding: 0;
     background-image: url("/img/fondo1.jpg");
     background-size: contain;
-    background-size: 1940px;
+    background-size: 1835px;
     background-repeat: no-repeat;
     background-position: top;
 }
@@ -19,7 +19,7 @@ h1{
 
 /* CIRCULOS */
 #container_principal{
-    height: 400px;
+    height: 600px;
     min-height: 100vh;
 }
 
