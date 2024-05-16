@@ -17,7 +17,7 @@ main{
     background-color: #ffffff;
     flex-wrap: wrap;
     padding: 0;
-
+    padding-bottom: 213px;
 }
 
 #container_descripcion h2{
@@ -27,13 +27,35 @@ main{
 #container_descripcion p{
     size: 22px;
     padding: 100px;
+    padding: 0px;
     padding-bottom: 50px;
     margin: 0;
 }
 
 
-@media (max-width: 375.98px) {
+#reactangulo .cuadrado{
+    background-color: gray;
+    height: 350px;
+    width: 550px;
+}
 
+#ventajas .cuadrado{
+    background-color: gray;
+    height: 650px;
+    width: 950px;
+}
+
+@media (max-width: 375.98px) {
+    #reactangulo .cuadrado{
+        background-color: gray;
+        height: 105px !important;
+        width: 165px !important;
+    }
+    #ventajas .cuadrado{
+        background-color: gray;
+        height: 195px !important;;
+        width: 285px !important;;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -43,20 +65,38 @@ main{
     #container_descripcion p{
         size: 16px;
     }
+
+    #reactangulo .cuadrado{
+        height: 245px;
+        width: 275px;
+    }
+    #ventajas .cuadrado{
+        height: 325px;
+        width: 475px;
+    }
 }
 
 @media (max-width: 767.98px) {
-
+    #reactangulo .cuadrado{
+        height: 175px;
+        width: 385px;
+    }
+    #ventajas .cuadrado{
+        height: 455px;
+        width: 665px;
+    }
 }
 
 @media (max-width: 991.98px) {
-
+    #ventajas .cuadrado{
+        height: 550px;
+        width: 850px;
+    }
 }
 
 @media (max-width: 1199.98px) {
-
-}
-
-@media (max-width: 1399.98px) {
-
+    #ventajas .cuadrado{
+        height: 550px;
+        width: 850px;
+    }
 }
