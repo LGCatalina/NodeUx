@@ -16,8 +16,6 @@
     <link rel="stylesheet" href="/css/patrones.css">
     <!-- nav.css -->
     <link rel="stylesheet" href="/nav/nav.css">
-    <!-- cookie -->
-    <link rel="stylesheet" href="/cookie/cookie.css">
     <!-- footer.css -->
     <link rel="stylesheet" href="/footer/footer.css">
 </head>
@@ -25,29 +23,37 @@
     <!-- nav barra -->
     <div id="nav"></div>
 
-    <!-- cuadro principal -->
-    <div class="container justify-content-between" id="container_principal"> 
-        <div class="container-fluid"><h2>PATRONES</h2></div>
-        <div class="container-fluid justify-content-center">
-            <p>El concepto de patrones de diseño fue aplicado 
-                por el arquitecto Christopher Alexander para ser 
-                introducidos posteriormente al desarrollo de 
-                softwares junto a otras disciplinas en la actualidad. 
-                Su esencia recae en que un patrón es una solución a 
-                un problema recurrente de diseño.</p>
-        </div>
+    <main class="main">
+        <!-- cuadro principal -->
+        <div class="container justify-content-between" id="container_principal"> 
+            <div class="container-fluid" id="container_descripcion">
+                <h2>PATRONES</h2>
+                <p class="justify-content-between">Concepto aplicado por el arquitecto Cristopher Alexander para ser introducidos 
+                    principalmente en el área de desarrollo de softwares, sin embargo, en la actualidad 
+                    también abarca a otras disciplinas.
+                    Los patrones de diseño son elementos que complementan el estilo y estructura 
+                    de una interfaz que tienden a generar dinámicas de interacción más atrayentes y llamativas para el usuario.</p>
+                <p>La función principal de los patrones, al menos dentro del diseño UI, consiste en estandarizar elementos de interfaz 
+                    y ofrecer soluciones acertivas a los problemas comunes que se presentan dentro del diseño de una plataforma
+                    . Para su implementación hay que previamente delimitar tanto a la problemática recurrente de la plataforma y 
+                    comprobar la aplicabilidad del patrón en diferentes circunstancias que rodeen esta problemática en la relación 
+                    interfaz-usuario.
+                </p>
+            </div>
 
-    </div>
+        </div>
+    </main>
     <!-- footer  -->
     <div id="footer"></div>
-        <!-- bootstrap -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-        <!-- js -->
-        <script src="#" async defer></script>
-        <!-- nav.js -->
-        <script src="/nav/nav.js"></script>
-        <!-- footer.js -->
-        <script src="/footer/footer.js"></script>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <!-- js -->
+    <script src="#" async defer></script>
+    <!-- nav.js -->
+    <script src="/nav/nav.js"></script>
+    <!-- footer  -->
+    <script src="/footer/footer.js"></script>
 </body>
 </html>

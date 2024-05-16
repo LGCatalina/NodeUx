@@ -4,9 +4,59 @@ body{
     padding: 0;
     font-family: "Bebas Neue", sans-serif;
 }
+main{
+    margin-bottom: 24px;
+}
+
+.navbar{
+    background-color: #0D5552;
+}
 
 #container_principal{
     min-height: 100vh;
     background-color: #ffffff;
     flex-wrap: wrap;
+    padding: 0;
+
+}
+
+#container_descripcion h2{
+    size: 50px;
+    padding: 50px;
+}
+#container_descripcion p{
+    size: 22px;
+    padding: 100px;
+    padding-bottom: 50px;
+    margin: 0;
+}
+
+
+@media (max-width: 375.98px) {
+
+}
+
+@media (max-width: 575.98px) {
+    #container_descripcion h2{
+        size: 40px;
+    }
+    #container_descripcion p{
+        size: 16px;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+}
+
+@media (max-width: 991.98px) {
+
+}
+
+@media (max-width: 1199.98px) {
+
+}
+
+@media (max-width: 1399.98px) {
+
 }

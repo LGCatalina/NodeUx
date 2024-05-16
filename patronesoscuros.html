@@ -50,10 +50,11 @@
                 </p>
             </div>
         </div>
-        <!-- CATEGORÍAS -->        <h2>CATEGORÍAS</h2>
+        <!-- CATEGORÍAS -->        
+        <h2>CATEGORÍAS</h2>
         <!-- FILAS -->
-        <div class="row container_doble">
-            <div class="col-5">
+        <div class="row container_doble" id="bock_click">
+            <div class="col-5" id="bock_click">
                 <h3 class="titulo-manipulacion">MANIPULACIÓN <span class="triangulo"></span></h3>
             </div>
             <div class="col-7">
@@ -61,7 +62,7 @@
                     pero que son beneficiosas para la interfaz o servicio.</p>
             </div>
         </div>
-        <div class="contenido oculto" id="contenido-manipulacion">
+        <div class="contenido-oculto" id="contenido-manipulacion">
             <!-- Contenido oculto aquí -->
             <h2>MANIPULACIÓN</h2>
             <p>Se presenta al usuario una opción para realizar una acción,
@@ -69,6 +70,43 @@
                   Por ejemplo, los botones de Aceptar y Cancelar pueden estar diseñados de manera
                    que el botón Aceptar sea más llamativo o esté ubicado en una posición que
                     favorezca su selección accidental.
+            </p>
+            <h3>Casos de estudio</h3>
+            <p>Loren ipsun dolor sit anet, consectetur adipisci elit, 
+                sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua. 
+                Ut enin ad ninin venian, quis nostrun exercitationen.
+            </p>
+            <div class="container text-center " id="cuado_interactivo">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Launch static backdrop modal
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        ...
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contenido-oculto" id="contenido-emocional">
+            <!-- Contenido oculto aquí -->
+            <h2>Manipulación Emocional</h2>
+            <p>Estos patrones buscan influir en la toma de decisiones evocando las emociones de los usuarios.
+                 Se busca con ello motivar comportamientos y acciones beneficiosas mediante reacciones emotivas
+                  y el desarrollo de vínculos emocionales con el servicio.
             </p>
             <h3>Casos de estudio</h3>
             <p>Loren ipsun dolor sit anet, consectetur adipisci elit, 
@@ -111,8 +149,6 @@
     <script src="js/patronesoscuros.js" async defer></script>
     <!-- nav.js -->
     <script src="nav/nav.js"></script>
-    <!-- loader distraccion -->
-    <script src="loader/loader.js"></script>
     <!-- footer.js -->
     <script src="footer/footer.js"></script>
 </body>
