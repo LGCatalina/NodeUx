@@ -5,7 +5,7 @@ body {
     padding: 0;
     background-image: url("/img/fondo1.jpg");
     background-size: contain;
-    background-size: 1940px;
+    background-size: 1835px;
     background-repeat: no-repeat;
     background-position: top;
 }
@@ -19,7 +19,7 @@ h1{
 
 /* CIRCULOS */
 #container_principal{
-    height: 1080px;
+    height: 600px;
     min-height: 100vh;
 }
 
@@ -79,7 +79,6 @@ h1{
     height: 299px;
     display: flex;
     justify-content: center;
-    padding: 0px;
     margin: 0px;
     background: linear-gradient(#13847E,#0E1720);
 }
@@ -101,12 +100,12 @@ h1{
     margin: 50px auto; /* Centramos vertical y horizontalmente */
     padding: 0 20px; /* Añadimos un poco de espacio interno */
     text-align: center;
-    font-size: 12px; 
+    font-size: 2px; 
 }
 
 #textocentral p {
     color: white;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 1.5; /* Ajustamos el espaciado entre líneas */
 }
 
@@ -125,7 +124,7 @@ h1{
 
 #texto_diseño p{
     max-width: 492px;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 #tipos,
@@ -141,6 +140,7 @@ h1{
 #campo_laboral p,
 #informacion_usuario p{
     font-family: "Nunito Sans", sans-serif;
+    font-size: 18px;
 }
 
 /* franja_2 */
@@ -176,6 +176,7 @@ h1{
 /* objetivo */
 #objetivo {
     color: white;
+    font-family: "Nunito Sans", sans-serif;
 
 }
 
@@ -184,6 +185,7 @@ h1{
     font-size: 70px;
     color: #A3D4D2;
     display: flex;
+    font-family: "Bebas Neue", sans-serif;
 }
 
 #objetivo #texto{
@@ -195,7 +197,7 @@ h1{
     width: 330px;
     height: 336px;
     border: 2px solid #A3D4D2;
-    margin: 10px;
+    margin: 15px;
     display: flex;
     flex-direction: column; /* Alinear el contenido verticalmente */
     justify-content: center; /* Centra verticalmente */
