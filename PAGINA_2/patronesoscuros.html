@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NodeUx</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- styles.css -->
+    <link rel="stylesheet" href="/PAGINA_2/css/patronesoscuros.css">
+    <!-- nav.css -->
+    <link rel="stylesheet" href="/PAGINA_2/nav/nav.css">
+    <!-- loader distraccion -->
+    <link rel="stylesheet" href="/PAGINA_2/loader/loader.css">
+    <!-- footer.css -->
+    <link rel="stylesheet" href="/PAGINA_2/footer/footer.css">
+</head>
+<body>
+    <!-- nav barra -->
+    <div id="nav"></div>
+    <main class="main">
+    <!-- cuadro principal -->
+    <div class="rectangulopestaña"></div>
+    <div class="container justify-content-between" id="container_principal"> 
+        <!-- descripcion -->
+        <div class="container" id="containertitulo">
+            <h2>PATRONES OSCUROS</h2>
+            <div class="container text-center" id="container_texto">
+                <p>Pese a que los patrones tengan el objetivo de potenciar la calidad de experiencia interfaz-usuario existe un área de patrones oscuros o Dark Patterns,
+                   estas a diferencia de los patrones estándares corresponden a técnicas del diseño de interfaces que priorizan los beneficios de los 
+                   propietarios de la interfaz por sobre a las del usuario, realizando diseños que perjudican y dificultan la experiencia del usuario
+                   con el servicio mediante acciones forzadas, incómodas o que influyen en el comportamiento de la plataforma donde los usuarios acceden
+                   a interactuar con ellos de manera forzada o sin consentimiento explícito.</p> 
+
+                   <p>Estos patrones están diseñados para lograr objetivos particulares como lo sería aumentar las suscripciones a un servicio de manera inmediata y que
+                   pudiese generar mayores ingresos a los dueños o compañías de estas plataformas, no obstante, estos se generarían a costa de la satisfacción y
+                   confianza del usuario hacia el servicio e incluso del propietario a cargo.</p>
+                    
+                   <p>El rol del diseñador en la implementación de estos patrones varía tanto de la ética profesional que tenga el diseñador como de las políticas
+                   de la empresa o propietario al cual trabaje el diseñador. El diseñador cumple un papel fundamental en la ejecución de la interfaz y por
+                   consiguiente, es responsable de cómo se presentan estos servicios y de cómo interactúa con los usuarios. Por lo tanto, es importante que los
+                   diseñadores tengan conciencia de estas técnicas interactivas y  de sus consecuencias para el usuario como también del pensamiento crítico
+                   para considerar si es factible la implementación de estos elementos en sus interfaces.
+                </p>
+            </div>
+        </div>
+        <!-- CATEGORÍAS -->        <h2>CATEGORÍAS</h2>
+        <!-- FILAS -->
+        <div class="row container_doble">
+            <div class="col-5">
+                <h3 class="titulo-manipulacion">MANIPULACIÓN <span class="triangulo"></span></h3>
+            </div>
+            <div class="col-7">
+                <p>Se dirige al usuario para que realice acciones no deseadas, 
+                    pero que son beneficiosas para la interfaz o servicio.</p>
+            </div>
+        </div>
+        <div class="contenido oculto" id="contenido-manipulacion">
+            <!-- Contenido oculto aquí -->
+            <h2>MANIPULACIÓN</h2>
+            <p>Se presenta al usuario una opción para realizar una acción,
+                 pero el diseño de la interfaz hace que sea fácil seleccionar una opción no deseada.
+                  Por ejemplo, los botones de Aceptar y Cancelar pueden estar diseñados de manera
+                   que el botón Aceptar sea más llamativo o esté ubicado en una posición que
+                    favorezca su selección accidental.
+            </p>
+            <h3>Casos de estudio</h3>
+            <p>Loren ipsun dolor sit anet, consectetur adipisci elit, 
+                sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua. 
+                Ut enin ad ninin venian, quis nostrun exercitationen.
+            </p>
+            <div class="container text-center " id="cuado_interactivo">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Launch static backdrop modal
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        ...
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- footer  -->
+    <div id="footer"></div>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <!-- js -->
+    <script src="js/patronesoscuros.js" async defer></script>
+    <!-- nav.js -->
+    <script src="nav/nav.js"></script>
+    <!-- loader distraccion -->
+    <script src="loader/loader.js"></script>
+    <!-- footer.js -->
+    <script src="footer/footer.js"></script>
+</body>
+</html>

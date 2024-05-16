@@ -1,0 +1,36 @@
+.navbar{
+    font-family: "Bebas Neue", sans-serif;
+    height: 170px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+}
+
+.navbar.sticky{
+    background-color: #A5D7D7;
+    height: 100px;
+}
+
+#nav_home{
+    font-size: 70px;
+    color: #ffffff;
+}
+
+#nav_ejemplos,
+#nav_acerca {
+    color: #ffffff;
+    font-size: 30px;
+    padding-left: 30px;
+}
+.dropdown-menu {
+    background-color: #A5D7D7;
+}
+
+.dropdown-menu .dropdown-item {
+    color: #3D494E;
+}
+
+.nav-item.dropdown.active .nav-link {
+    background-color: #A5D7D7;
+    color: #ffffff;
+}

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    fetch("/PAGINA_2/cookie/cookie.html")
+    fetch("/cookie/cookie.html")
         .then(response => response.text())
         .then(data => {
             document.getElementById("cookie").innerHTML = data;
