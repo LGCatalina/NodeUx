@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página de Dark Patterns</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #222;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: #333;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        position: relative; /* Para posicionar las alertas */
+    }
+    .alert {
+        background-color: #A3D4D2;
+        color: black;
+        padding: 10px 20px;
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+    .card {
+        background-color: #444;
+        color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+    .card h2 {
+        color: #13847E;
+        margin-top: 0;
+    }
+    button {
+        background-color: #13847E;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #ff8533;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>¡hola Usuario!</h1>
+        <p>Estimado usuario,</p>
+        <!-- Tarjeta de Publicación en Redes Sociales -->
+        <div class="card">
+            <h2>¡Nuevo Descubrimiento!</h2>
+            <p>¡Miren lo que encontré! Este producto es increíble y ha cambiado mi vida.</p>
+        </div>
+        <!-- Alerta de Contenido de Marca en Blogs -->
+        <div class="alert">
+            <p>¡Atención!</p>
+            <p>El artículo que estás leyendo puede contener contenido patrocinado.</p>
+            <button onclick="closeAlert(this)">Cerrar</button>
+        </div>
+        <!-- Tarjeta de Contenido de Marca en Blogs -->
+        <div class="card">
+            <h2>Los 10 beneficios sorprendentes de usar XYZ</h2>
+            <p>Descubre por qué XYZ es el mejor producto del mercado y cómo puede mejorar tu vida.</p>
+        </div>
+        <button id="subscribeButton" style="padding: 10px 20px; background-color: #0D5552; color: #fff; border: none; border-radius: 4px; cursor: pointer;" onclick="window.location.href='/patronesoscuros.html';">¡Haz clic aquí para recibir tu regalo!</button>
+    </div>
+
+    <script>
+        // Función para cerrar la alerta
+        function closeAlert(element) {
+            var alert = element.parentElement;
+            alert.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

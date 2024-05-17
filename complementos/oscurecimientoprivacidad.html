@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página de Dark Patterns</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #222;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: #333;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        position: relative; /* Para posicionar la ventana emergente de consentimiento */
+    }
+    h1 {
+        color: #13847E;
+        text-align: center;
+    }
+    p {
+        margin-bottom: 20px;
+    }
+    button {
+        background-color: #13847E;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #13847E;
+    }
+    #consentPopup {
+        display: none;
+        position: absolute;
+        top: calc(100% + 20px); /* Abajo del texto */
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #fff;
+        color: #000; /* Texto en negro */
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        z-index: 1000; /* Para que esté sobre el contenido */
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+<!-- Ejemplo del punto 4: Difícil cancelación de suscripción -->
+        <div id="subscriptionCancellation" style="text-align: center;">
+            <h2>¿Deseas cancelar tu suscripción?</h2>
+            <p>Lamentamos que desees cancelar tu suscripción. Por favor, sigue los pasos a continuación para completar el proceso de cancelación.</p>
+            <ol style="text-align: left;">
+                <li>Inicia sesión en tu cuenta.</li>
+                <li>Navega hasta la sección de configuración de la cuenta.</li>
+                <li>Encuentra la opción de "Cancelar Suscripción" y haz clic en ella.</li>
+                <li>Rellena el formulario de cancelación y confirma tu decisión.</li>
+            </ol>
+            <p>Si encuentras dificultades o necesitas ayuda, por favor contáctanos <a href="#" id="showInfo">aquí</a>.</p>
+            <button id="showConsentPopup">Mostrar Ventana Emergente</button>
+        </div>
+        <!-- Fin del ejemplo -->
+
+        <!-- Ejemplo de ventana emergente de consentimiento confusa -->
+        <div id="consentPopup">
+            <h2>Consentimiento para Recopilación de Datos</h2>
+            <p>Para continuar utilizando nuestro sitio web, necesitamos tu consentimiento para recopilar y procesar ciertos datos personales. Por favor, lee nuestra política de privacidad detenidamente antes de tomar una decisión.</p>
+            <p>Al hacer clic en "Aceptar", aceptas nuestra política de privacidad y nos autorizas a recopilar y procesar tus datos de acuerdo con lo establecido en la misma.</p>
+            <p><a href="politica_privacidad.html" target="_blank">Leer Política de Privacidad</a></p>
+            <button id="acceptButton" onclick="window.location.href='/patronesoscuros.html';">Aceptar</button>
+            <button id="rejectButton" onclick="window.location.href='/patronesoscuros.html';">Rechazar</button>
+        </div>
+        <!-- Fin del ejemplo -->
+    </div>
+
+    <div id="infoContent" style="display: none;">
+        <h2>¡has caído en un patrón oscuro!</h2>
+        <p>Su categoria es: Patrones de Oscurecimiento de la Privacidad</p>
+        <ul>
+            <li>Difícil cancelación de suscripción: Hacer que el proceso para cancelar una suscripción o eliminar una cuenta sea complicado o confuso, a menudo requiriendo múltiples pasos o interacciones con el servicio al cliente.</li>
+            
+        </ul>
+    </div>
+
+<script>
+    document.getElementById("showConsentPopup").addEventListener("click", function() {
+        document.getElementById("consentPopup").style.display = "block";
+    });
+
+    document.getElementById("acceptButton").addEventListener("click", function() {
+        document.getElementById("consentPopup").style.display = "none";
+    });
+
+    document.getElementById("rejectButton").addEventListener("click", function() {
+        // Aquí puedes agregar la lógica para rechazar el consentimiento si es necesario
+        document.getElementById("consentPopup").style.display = "none";
+    });
+
+    document.getElementById("showInfo").addEventListener("click", function(event) {
+        event.preventDefault(); // Para evitar que el enlace redireccione
+        var infoContent = document.getElementById("infoContent");
+        if (infoContent.style.display === "none") {
+            infoContent.style.display = "block";
+        } else {
+            infoContent.style.display = "none";
+        }
+    });
+</script>
+
+</body>
+</html>

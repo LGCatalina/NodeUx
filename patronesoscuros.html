@@ -65,7 +65,7 @@
                         pero que son beneficiosas para la interfaz o servicio.</p>
             </div>
         </div>
-                <!-- Aqui va el temporizador o la pelota que va subiendo escalones -->
+                
             <!-- Contenido oculto aquí -->
         <div class="contenido-oculto" id="contenido-manipulacion">
             <h2>MANIPULACIÓN</h2>
@@ -76,7 +76,12 @@
                     favorezca su selección accidental.
             </p>
             <h3>CASO DE ESTUDIO</h3>
+            <!-- Aqui va el temporizador o la pelota que va subiendo escalones -->
             <div class="container text-center " id="cuadro_interactivo1">
+                <div class="loader-container">
+                    <div class="loader"></div>
+                    <div class="loader-text">Dark patterns, desviación de la atención del usuario de las cosas importantes</div>
+                </div>
             </div>
         </div>
 
@@ -91,7 +96,6 @@
                 pero que son beneficiosas para la interfaz o servicio.</p>
             </div>
         </div>
-                <!-- aqui va el botón de no tocar y la alerta de spam -->
         <!-- Contenido oculto aquí -->
         <div class="contenido-oculto" id="contenido-emocional">
             <h2>MANIPULACIÓN EMOCIONAL</h2>
@@ -100,9 +104,31 @@
                   y el desarrollo de vínculos emocionales con el servicio.
             </p>
             <h3>CASO DE ESTUDIO</h3>
-            <!-- cuadrado -->
-            <div class="container text-center " id="cuadro_interactivo2">
-
+            <!-- aqui va el botón de no tocar y la alerta de spam -->
+            <div class="container d-flex align-items-center justify-content-center " id="cuadro_interactivo2"> 
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    ¡No tocar!
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Ayúdanos a combatir la pobreza</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-dialog modal-dialog-centered">
+                                <p style="padding: 10%;">Tu contribución puede marcar la diferencia en la vida de muchas personas.
+                                    Únete a nosotros en nuestra lucha contra la pobreza.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No me interesa los niños pobres</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -118,7 +144,6 @@
                 es como funciona este patrón.</p>
             </div>
         </div>
-                <!-- botón de aceptar sea grande y el contenido textual pequeño y botón de no tocar que cambie al hacer click-->
         <!-- Contenido oculto aquí -->
         <div class="contenido-oculto" id="contenido-oscurecimiento">
             <h2>OSCURECIMIENTO DE PRIVACIDAD</h2>
@@ -129,7 +154,9 @@
             </p>
             <h3>CASO DE ESTUDIO</h3>
             <!-- cuadrado -->
-            <div class="container text-center " id="cuadro_interactivo3">
+            <!-- botón de aceptar sea grande y el contenido textual pequeño y botón de no tocar que cambie al hacer click-->
+            <div class="container d-flex align-items-center justify-content-center " id="cuadro_interactivo1">
+                <button style="padding: 10px 20px; background-color: gray; color: #fff; border: none; border-radius: 4px; cursor: pointer;" onclick="window.location.href='/complementos/oscurecimientoprivacidad.html';">¿Deseas cancelar tu suscripción?</button>
 
             </div>
         </div>
@@ -147,7 +174,6 @@
                 se trate de alguna tarea a concretar ó alguna información.</p>
             </div>
         </div>
-                <!-- dar click al carrito o botón con información que despues sale leer más -->
         <!-- Contenido oculto aquí -->
         <div class="contenido-oculto" id="contenido-informacion">
             <h2>OCULTACIÓN DE INFORMACIÓN</h2>
@@ -156,19 +182,19 @@
                 que podría no convenir para la empresa que el usuario conozca esta información.</p>
             <h3>CASO DE ESTUDIO</h3>
             <!-- LEER MÁS -->
-            <div class="container text-center " id="cuadro_interactivo4">
+            <div class="container d-flex align-items-center justify-content-center " id="cuadro_interactivo4">
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Leer Más</button>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop-2">Leer Más</button>
                 <!-- Modal -->
-                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal fade" id="staticBackdrop-2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel-2" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Obstrucción del Flujo</h1>
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel-2">Obstrucción del Flujo</h1>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body text-center">
-                                <p>¡Has caído en un patrón oscuro! Su categoría es obstrucción del flujo de navegación,
+                                <p style="padding: 0%;">¡Has caído en un patrón oscuro! Su categoría es obstrucción del flujo de navegación,
                                     este patrón crea obstáculos que dificultan realizar cierta opciones como lo hace el botón de
                                     (leer más).</p>
                             </div>
@@ -189,17 +215,18 @@
                     dan procesos automáticos de vago conocimiento.</p>
             </div>
         </div>
-                <!-- botón de suscribirse o targeta de suscripción gratis-->
+                
         <!-- Contenido oculto aquí -->
-        <div class="contenido-oculto" id="contenido-suscripciones">
+        <div class="contenido-oculto " id="contenido-suscripciones">
             <h2>SUSCRIPCIONES INVOLUNTARIAS</h2>
             <p>Este tipo de patrones se utilizan para la suscripción a servicios o productos mediante 
                 procesos automáticos o de vago consentimiento, aprovechándose de la falta de transparencia
                 al presentar información sobre la plataforma y servicio.</p>
             <h3>CASO DE ESTUDIO</h3>
-            <div class="container text-center " id="cuadro_interactivo5">
-
-            </div>
+                <!-- botón de suscribirse o targeta de suscripción gratis-->
+                <div class="container d-flex align-items-center justify-content-center" id="cuadro_interactivo5">
+                    <button style="padding: 10px 20px; background-color: gray; color: #fff; border: none; border-radius: 4px; cursor: pointer;" onclick="window.location.href='/complementos/suscripcion.html';">¡Haz clic aquí para recibir una suscripción gratis!</button>
+                </div>
         </div>
 
         <!-- FILA6 -->
@@ -214,7 +241,6 @@
                     provoque que el usuario se arrepienta.</p>
             </div>
         </div>
-                <!--la compra se acaba o muchos botones de descarga-->
         <!-- Contenido oculto aquí -->  
         <div class="contenido-oculto" id="contenido-urgencias">
             
@@ -224,8 +250,27 @@
                 compulsiva de decisiones dentro la interfaz a expensas de la realización de acciones informadas y conscientes
                 en la página y a largo plazo al posible arrepentimiento de usar el servicio ofrecido.</p>
             <h3>CASO DE ESTUDIO</h3>
-            <div class="container text-center " id="cuadro_interactivo6">
-
+            <!--la compra se acaba o muchos botones de descarga-->
+            <div class="container d-flex align-items-center justify-content-center " id="cuadro_interactivo4">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop-3">
+                    !Haz click y resive una oferta especial!
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop-3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel-3" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel-3">¡Oferta especial!</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        <p style="padding: 0%;">"¡Oferta especial! Suscríbete ahora y obtén un 50% de descuento en tu primer mes."</P>
+                        </div>
+                    </div>
+                    </div>
+                </div> 
             </div>
         </div>                
 
@@ -241,7 +286,6 @@
                     alguna acción de forma involuntaria.</p>
             </div>
         </div>
-        <!-- botón del area del diseño que te redireccione-->
         <!-- Contenido oculto aquí -->  
         <div class="contenido-oculto" id="contenido-disfrazados">
             <h2>ANUNCIOS DISFRAZADOS</h2>
@@ -250,7 +294,9 @@
                 Para ello la plataforma presenta un formato de anuncios fácil de confundir, donde se confunden
                 y mezclan la apariencia de los anuncios con el contenido.</p>
             <h3>CASO DE ESTUDIO</h3>
-            <div class="container text-center " id="cuadro_interactivo7">
+            <!-- botón del area del diseño que te redireccione-->
+            <div class="container d-flex align-items-center justify-content-center" id="cuadro_interactivo7">
+                <button style="padding: 10px 20px; background-color: gray; color: #fff; border: none; border-radius: 4px; cursor: pointer;" onclick="window.location.href='/complementos/anunciosdisfrazados.html';">¡Haz clic aquí para recibir INCREIBLES PREMIOS!</button>
             </div>
         </div>  
     </main>

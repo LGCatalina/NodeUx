@@ -64,6 +64,18 @@ h2{
   font-family: "Nunito Sans", sans-serif;
 }
 
+#cuadro_interactivo3{
+  h1{
+    font-size: 2em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+  }
+}
+
 /* contenido oculto */
 .contenido-oculto{
   background-color: #A3D4D2;
@@ -114,6 +126,7 @@ h2{
   margin-left: 5px; /* Ajusta el margen según sea necesario */
   cursor: pointer;
 }
+
 
 @media (max-width: 375.98px) {
 

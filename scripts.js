@@ -1,13 +1,4 @@
-// Variable para rastrear si la oferta ya se ha mostrado
-var ofertaMostrada = false;
 
-// Función para mostrar la alerta de oferta cuando el usuario desplaza hacia abajo la página
-window.addEventListener('scroll', function() {
-    if (window.scrollY > 100 && !ofertaMostrada) {
-        alert("¡Oferta especial! Suscríbete ahora y obtén un 50% de descuento en tu primer mes.");
-        ofertaMostrada = true;
-    }
-});
 
 // Función para mostrar la alerta de bendición después de 5 segundos
 setTimeout(function() {
