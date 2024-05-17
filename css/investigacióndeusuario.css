@@ -50,6 +50,15 @@ h2 {
     margin-left: 40px;
 }
 
+p {
+    max-width: 800px;
+    margin-bottom: 5px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: left;
+    font-family: "Nunito Sans", sans-serif;
+  }
+
 
 #reactangulo .cuadrado{
     background-color: gray;
