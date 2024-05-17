@@ -21,6 +21,7 @@ main{
   align-items: center;
 }
 
+/* container_principal */
 #container_principal{
     min-height: 100vh;
     background-color: #ffffff;
@@ -28,17 +29,14 @@ main{
     padding: 0px;
 }
 
-#titulo-manipulacion h3{
-  margin-left: 80px;
-}
-
-#containertitulo h2{
+/* descripcion */
+h2{
   padding-top: 40px;
   margin-bottom: 40px;
   margin-left: 40px;
 }
 
-#container_texto p{
+#descripcion p{
   max-width: 800px;
   margin-bottom: 5px;
   margin: 50px auto;
@@ -47,32 +45,18 @@ main{
   font-family: "Nunito Sans", sans-serif;
 }
 
-#categorias h3{
-  padding-bottom: 20px;
-  margin-left: 40px;
-}
-
-#categorias h2 {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin-left: 100px;
-  margin-right: 100px;
-}
-
-#categorias p {
-  width: auto;
-  padding-bottom: 60px;
-  font-family: "Nunito Sans", sans-serif;
-
-}
-
-#container_doble button{
+/* categorias */
+.row{
   padding-top: 40px;
   padding-bottom: 40px;
   margin-left: 40px;
 }
+.row h3{
+  cursor: pointer;
 
-#container_doble p{
+}
+
+.row p{
   padding-top: 40px;
   padding-bottom: 40px;
   margin-left: 40px;
@@ -80,34 +64,23 @@ main{
 }
 
 /* contenido oculto */
-
 .contenido-oculto{
   background-color: #A3D4D2;
+  padding-top: 67px;
+  padding-bottom: 74px;
 }
 
-H2{
-  padding-top: 40PX;
+#contenido-manipulacion, #contenido-emocional, #contenido-oscurecimiento, #contenido-informacion
+, #contenido-suscripciones, #contenido-urgencias, #contenido-disfrazados{
+  display: none;
 }
 
-#contenido-manipulacion #contenido-emocional,
- h2{
+.contenido-oculto h2{
   font-size: 50;
   margin-left: 40px;
 }
-#contenido-manipulacion p{
-  font-size: 22;
-  padding-left: 200px;
-  padding-right: 30px;
-  text-align: left;
-  max-width: 800px;
-  font-family: "Nunito Sans", sans-serif;
-}
-#contenido-manipulacion h3{
-  font-size: 33;
-  padding-left: 40px;
-}
 
-#contenido-emocional p{
+.contenido-oculto p{
   font-size: 22;
   padding-left: 200px;
   padding-right: 30px;
@@ -116,21 +89,18 @@ H2{
   font-family: "Nunito Sans", sans-serif;
 }
 
-#contenido-emocional h3{
+.contenido-oculto h3{
   font-size: 33;
   padding-left: 40px;
 }
 
-
-#contenido-manipulacion #contenido-emocional,
- #cuado_interactivo{
+#cuadro_interactivo1, #cuadro_interactivo2, #cuadro_interactivo3,
+#cuadro_interactivo4, #cuadro_interactivo5, #cuadro_interactivo6, #cuadro_interactivo7
+{
   background-color: #13847E;
-  max-width: 550px;
+  width: 550px;
   height: 350px;
-  padding-bottom: 40px;
 }
-
-
 
 /* Estilo del triángulo */
 .triangulo {
