@@ -59,6 +59,15 @@ p {
     font-family: "Nunito Sans", sans-serif;
   }
 
+#reactangulo .container-img{
+   text-align: center;
+   justify-content: center; 
+}
+
+#reactangulo .container-imagen{
+    text-align: center;
+    justify-content: center; 
+ }
 
 #reactangulo .cuadrado{
     background-color: gray;
