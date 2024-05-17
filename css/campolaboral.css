@@ -1,0 +1,140 @@
+body {
+    background-color: #0E1720 !important;
+    margin: 0; 
+    color: #13847E;
+    font-family: "Bebas Neue", sans-serif;
+}
+.navbar{
+  background-color: #0D5552;
+}
+main{
+  margin-bottom: 24px;
+}
+
+.rectangulopestaña {
+  width: 240px; 
+  height: 40px; 
+  margin-left: 80px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* container_principal */
+#container_principal{
+    min-height: 100vh;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+/* descripcion */
+h2{
+  padding-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 40px;
+  size: 50px;
+}
+
+#descripcion p{
+  max-width: 800px;
+  margin-bottom: 5px;
+  margin: 50px auto;
+  padding: 0 20px;
+  text-align: left;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+/* categorias */
+.row{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-left: 40px;
+}
+.row h3{
+  cursor: pointer;
+
+}
+
+.row p{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-left: 40px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+/* contenido oculto */
+.contenido-oculto{
+  background-color: #A3D4D2;
+  padding-top: 67px;
+  padding-bottom: 74px;
+}
+
+#contenido-manipulacion, #contenido-emocional, #contenido-oscurecimiento, #contenido-informacion
+, #contenido-suscripciones, #contenido-urgencias, #contenido-disfrazados{
+  display: none;
+}
+
+.contenido-oculto h2{
+  font-size: 50;
+  margin-left: 40px;
+}
+
+.contenido-oculto p{
+  font-size: 22;
+  padding-left: 200px;
+  padding-right: 30px;
+  text-align: left;
+  max-width: 800px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.contenido-oculto h3{
+  font-size: 33;
+  padding-left: 40px;
+}
+
+#cuadro_interactivo1, #cuadro_interactivo2, #cuadro_interactivo3,
+#cuadro_interactivo4, #cuadro_interactivo5, #cuadro_interactivo6, #cuadro_interactivo7
+{
+  background-color: #13847E;
+  width: 550px;
+  height: 350px;
+}
+
+/* Estilo del triángulo */
+.triangulo {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #000; /* Cambia el color del triángulo si lo deseas */
+  margin-left: 5px; /* Ajusta el margen según sea necesario */
+  cursor: pointer;
+}
+
+@media (max-width: 375.98px) {
+
+}
+
+@media (max-width: 575.98px) {
+
+}
+
+@media (max-width: 767.98px) {
+
+}
+
+@media (max-width: 991.98px) {
+
+}
+
+@media (max-width: 1199.98px) {
+
+}
+
+@media (max-width: 1399.98px) {
+
+}
