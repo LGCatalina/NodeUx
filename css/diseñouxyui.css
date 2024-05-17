@@ -29,12 +29,15 @@ main{
 }
 #container_descripcion p{
     max-width: 800px;
-    margin-bottom: 5px;
     margin: 50px auto;
     padding: 0 20px;
     text-align: left;
     font-family: "Nunito Sans", sans-serif;
   }
+
+#cuadrospequeños {
+    margin-left: 40px;
+}  
 
 h1 {
     size: 50px;
