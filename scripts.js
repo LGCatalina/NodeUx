@@ -1,8 +1,10 @@
+// scripts.js
 let rects = [];
 let connections = [];
 
 function setup() {
-    createCanvas(windowWidth, windowHeight);
+    let canvas = createCanvas(windowWidth, windowHeight);
+    canvas.parent('canvas-container');
     textSize(16);
     rectMode(CENTER);
 
@@ -19,18 +21,14 @@ function setup() {
     connections.push([0, 3]); // Conectar Rect 1 con Rect 4
     connections.push([0, 4]); // Conectar Rect 1 con Rect 5
     connections.push([0, 5]); // Conectar Rect 1 con Rect 6
-  
     connections.push([1, 2]); // Conectar Rect 2 con Rect 3
     connections.push([1, 3]); // Conectar Rect 2 con Rect 4
     connections.push([1, 4]); // Conectar Rect 2 con Rect 5
     connections.push([1, 5]); // Conectar Rect 2 con Rect 6
-  
     connections.push([2, 4]); // Conectar Rect 3 con Rect 5
     connections.push([2, 5]); // Conectar Rect 3 con Rect 5
-  
     connections.push([3, 4]); // Conectar Rect 4 con Rect 5
     connections.push([3, 5]); // Conectar Rect 4 con Rect 6
-    
 }
 
 function draw() {
@@ -99,12 +97,6 @@ class RectWithText {
         this.selected = !this.selected;
     }
 }
-
-
-// Función para mostrar la alerta de bendición después de 5 segundos
-setTimeout(function() {
-    alert("Envía esto a tus amigos y en 5 minutos recibirás una bendición. PD: No lo ignores o tendrás 7 años de mala suerte.");
-}, 5000);
 
 // Función para mostrar el mensaje al intentar salir de la página
 window.onbeforeunload = function() {

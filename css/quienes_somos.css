@@ -1,0 +1,33 @@
+body{
+    background-color: #0E1720 !important;
+    margin: 0; 
+    padding: 0;
+    color: #13847E;
+    font-family: "Bebas Neue", sans-serif;
+}
+main{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.navbar{
+    background-color: #0D5552;
+}
+
+#container_principal{
+    min-height: 100vh;
+    background-color: #ffffff;
+    padding: 0;
+    padding-bottom: 213px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#container_principal .container{
+    padding: 50px;
+}
+
+#container_principal .container p{
+    padding: 65px;
+    size: 22;
+}

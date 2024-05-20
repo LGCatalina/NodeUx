@@ -71,8 +71,8 @@ h2{
   padding-bottom: 74px;
 }
 
-#contenido-manipulacion, #contenido-emocional, #contenido-oscurecimiento, #contenido-informacion
-, #contenido-suscripciones, #contenido-urgencias, #contenido-disfrazados{
+#contenido-1, #contenido-2, #contenido-3, #contenido-4, #contenido-5, 
+#contenido-6, #contenido-7, #contenido-8, #contenido-9{
   display: none;
 }
 

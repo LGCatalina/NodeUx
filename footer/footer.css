@@ -1,27 +1,30 @@
 footer{
     background-color: #3D494E;
-    height: 312px;
-    max-width: auto;
     color: white;
     font-family: "Bebas Neue", sans-serif;
 }
 
-.row .col-4 h3{
-    font-size: 30px;
-    margin-top: 100px;
+#footer .row .col-4{
+    margin: 100px;
+    margin-bottom: 15px;
 }
-.row .col-4 p{
+
+#footer .row .col-4 h3{
+    font-size: 30px;
+}
+
+#footer .row .col-4 p{
     font-family: "Nunito Sans", sans-serif;
     width: 355.07px;
     height: 72px;
     font-size: 18px;
 }
 
-.row .col-2 h3{
+#footer .row .col-2 h3{
     font-size: 22px;
     margin-top: 100px;
 }
-.row .col-2 h4{
+#footer .row .col-2 h4{
     font-family: "Nunito Sans", sans-serif;
     font-size: 18px;
 }

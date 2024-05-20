@@ -17,20 +17,20 @@ h1{
     right: 800px;
 }
 
-/* CIRCULOS */
+/* rectangulos */
 #container_principal{
     height: 600px;
     min-height: 100vh;
 }
 
-#row_circulos_1{
+#row_rectangulos_1{
     transform: translate(0px, 166px);
 }
-#row_circulos_2{
+#row_rectangulos_2{
     transform: translate(0px, 544px);
 }
 
-#col_circulos{
+#container_principal .col{
     display: flex;
 }
 
