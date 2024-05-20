@@ -53,6 +53,14 @@ main{
     margin-bottom: 40px;
     margin-left: 40px;
 }
+ #container_descripcion1 p{
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: left;
+    font-family: "Nunito Sans", sans-serif;
+}
+
 #container_descripcion p{
     max-width: 800px;
     margin: 50px auto;
