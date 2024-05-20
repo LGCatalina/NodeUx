@@ -95,6 +95,7 @@ h1{
     border-color: transparent transparent transparent #13847E; /* Cambia el color del triángulo al hacer hover */
 }
 
+/* franja_1 */
 #franja_1{
     max-width: 100%;
     height: 299px;
@@ -175,7 +176,7 @@ h1{
     background: linear-gradient(#13847E,#0E1720);
 }
 
-#franja_2_contenido{
+#franja_2 .container{
     width: 381px;
     height: 111px;
     background-color: #A3D4D2;
@@ -184,12 +185,12 @@ h1{
     align-items: center;
 }
 
-#franja_2_contenido h2 {
+#franja_2 .container h2 {
     color: #0D5552;
     font-size: 50px;
     margin: 0px;
 }
-#franja_2_contenido .link-sin-estilo {
+#franja_2 .container .link-sin-estilo {
     color: inherit; /* Usa el color del texto del contenedor */
     text-decoration: none; /* Quita el subrayado */
   }
@@ -246,14 +247,86 @@ h1{
     width: 500px;
 }
 
-@media (max-width: 375.98px) {
-    #franja_2_contenido{
-        max-width: 181px;
-        height: 111px;
+@media (max-width: 388.98px) {
+    body{
+        max-width: 388.98px;
+    }
+    #container_principal{
+        height: 374px;
+        max-width: 264px;
+        margin: 64px;
+        padding: 0;
+    } 
+    #franja_1{
+        height: 114px;
+        max-width: 100%;
+    }
+    #franja_1 h2{
+        font-size: 40px;
+        padding: 0;
+    }
+
+    #textocentral{
+        height: 648px;
+        margin: 0;
+        padding: 30px;
+        padding-top: 33px;
     }
     #textocentral p{
-        color: white;
+        size: 15px;
+    }
+
+    #texto_diseño{
+        padding: 0;
+        margin: 0;
+    }
+
+    #texto_diseño .container{
+        padding: 0;
+        margin: 0;
+    }
+
+    #texto_diseño h2{
+        padding: 0;
+        margin: 0;
+        font-size: 15px;
+    }
+
+    #texto_diseño .col-6 {
+        padding: 0;
+        margin: 0;
+
         font-size: 30px;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    #texto_diseño #BOTONventana{
+        max-width: 313px;
+        height: 112px;
+    }
+
+    #franja_2_contenido{
+        max-width: 100%;
+        height: 114px;
+    }
+    #franja_2 .container{
+        width: 138.25px;
+        height: 44px;
+    }
+    #franja_2 .container h2 {
+        font-size: 20px;
+        margin: 0px;
+        padding: 0px;
+    }
+    #objetivo h2{
+        margin: 0;
+        padding: 0;
+        font-size: 30px;
+    }
+
+    #texto{
+        
     }
 }
 
@@ -268,7 +341,7 @@ h1{
     }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 818px) {
 
 }
 
@@ -277,7 +350,14 @@ h1{
 }
 
 @media (max-width: 1199.98px) {
+    #texto_diseño .col-6 {
+        padding: 0;
+        margin: 0;
 
+        font-size: 60px;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 1399.98px) {
