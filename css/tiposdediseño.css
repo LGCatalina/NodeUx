@@ -92,11 +92,20 @@ h1 {
   margin-left: 40px;
 }
 
+.col-7{
+  width: 500px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
 #imagen_industrial, #imagen_grafico, #imagen_interaccion{
   width: 300px;
   height: 300px;
 }
 
+#bock_click1, #bock_click2, #bock_click3 {
+  padding-left: 40px;
+  margin-left: 40px;
+}
 
 /* contenido oculto */
 .contenido {
@@ -126,6 +135,7 @@ h1 {
   text-align: left;
   max-width: 800px;
   margin-left: 40px;
+  font-family: "Nunito Sans", sans-serif;
 }
 #contenido-manipulacion h3{
   font-size: 33;
