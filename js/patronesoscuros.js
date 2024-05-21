@@ -21,3 +21,13 @@ document.querySelectorAll("[id^='bock_click']").forEach(function(button) {
 function showAlert() {
     alert("Tendras 7 años de mala suerte");
 }
+
+document.getElementById("boton_alerta").addEventListener("click", function() {
+    var alertaVirus = document.getElementById("alerta_virus");
+    alertaVirus.style.display = "block";
+});
+
+document.getElementById("boton_descargar").addEventListener("click", function() {
+    var alertaVirus = document.getElementById("alerta_virus");
+    alertaVirus.style.display = "none";
+});

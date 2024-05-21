@@ -163,6 +163,15 @@ main{
   margin-top: 50px;
 }
 
+#alerta_virus{
+  display: none;
+}
+
+#alerta_virus h3,
+#alerta_virus h4{
+  
+}
+
 /* Estilo del triángulo */
 .triangulo {
   display: inline-block;

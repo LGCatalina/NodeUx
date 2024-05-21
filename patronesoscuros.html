@@ -23,7 +23,7 @@
 </head>
 <body>
     <!-- nav barra -->
-    <div id="nav"></div>
+    <div id="nav2"></div>
     <main class="main">
     <!-- cuadro principal -->
     <div class="rectangulopestaña"></div>
@@ -329,12 +329,13 @@
             <h3>Spam Alerta de Virus.</h3>
             <p>Se busca la acción inmediata del usuario para emplear un servicio que alerta de  un problema en su ordenador o programa, el cual generalmente es falso.
             </p>
-            <div class="container text-center d-flex align-items-center justify-content-center" id="cuadro_interactivo6">
-                <div class="container alerta_Falsa d-block">
-                    <h2>Alerta de virus!</h2>
+            <div class="container text-center d-block align-items-center justify-content-center" id="cuadro_interactivo6">
+                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" id="boton_alerta">¡ALERTA DE VIRUS!</button>
+                <div id="alerta_virus" >
+                    <h3>Alerta de virus!</h3>
                     <img src="img/warning.png" alt="Descripción de la imagen" id="BOTONventana">
-
-                    <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal">Descargar.</button> 
+                    <h4 id="alerta_mensaje">Se ha detectado un virus!<br>¿Desea descargar un antivirus?</h3>
+                    <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" id="boton_descargar">Descargar.</button> 
                 </div>
             </div>
 
