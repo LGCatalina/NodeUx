@@ -1,0 +1,259 @@
+/**
+
+Cascada de Estilos
+
+
+**/
+
+
+// variables principales
+
+$color-bg: rgba(240, 237, 230, 0.886);
+$color-title: rgb(3, 108, 255);
+$color-text: rgb(3, 108, 255);
+$color-overlay: rgba(255, 218, 198, 0.659);
+$color-shadow: rgba(255, 81, 0, 0.17);
+
+
+// Variables para los breakpoints
+$phone-vertical: 480px; // Teléfonos en vertical
+$phone-horizontal: 768px; // Teléfonos en horizontal
+$desktop: 1024px; // Escritorio
+
+
+// google fonts
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,700&display=swap');
+
+
+/** mixin para sombras **/
+
+@mixin shadow-steps($num, $inc) {
+    $value: null; // Inicializa la cadena de sombras
+
+    @for $i from 1 through $num {
+        $value: #{$value},
+        #{$inc * $i} #{$inc * $i} 0 $color-shadow; // Concatena cada nueva sombra
+    }
+
+    box-shadow: $value; // Aplica todas las sombras acumuladas
+}
+
+body {
+    margin: 1em auto;
+    background-color: $color-bg;
+    width: calc(100% - 2em);
+    max-width: $desktop;
+}
+
+#p5_loading {
+    
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column;
+    font-size: 2em;
+    font-family: "Abril Fatface", serif;
+
+    color: $color-title;
+    width: 100%;
+    height: 50vh;
+}
+
+h2 {
+    color: $color-title;
+    font-size: 5em;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 1em 0 .5em 0;
+    line-height: 85%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2em;
+}
+
+.caso {
+    position: relative;
+    overflow: hidden;
+    height: 15em;
+    border-radius: 1ex;
+    border: .3ex solid $color-text;
+    @include shadow-steps(8, 2px);
+
+    img {
+        object-fit: fill;
+        transition: filter 0.5s, transform 0.5s;
+        object-position: center;
+        transform-origin: center;
+    }
+
+    .overlay {
+        position: absolute;
+        background-color: $color-overlay;
+        font-family: "Barlow", sans-serif;
+        width: 100%;
+        padding: 1em;
+        top: 0;
+        height: 100%; // Ajustar para cubrir todo el espacio vertical
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end; // Coloca el título al final del overlay
+        transition: transform 0.5s;
+        transform: translateY(0); // Ajustar para mostrar sólo el título
+        color: $color-text;
+        text-shadow: 1px 1px 2px $color-overlay;
+
+        h4 {
+            position: absolute;
+            font-size: 1.1em;
+            font-weight: 700;
+            text-transform: uppercase;
+            bottom: 2em;
+            width: calc(100% - 4em);
+        }
+
+        .desc {
+            font-size: 1.2em;
+            font-weight: 400;
+            transform: translateY(100%);
+            transition: transform 0.5s;
+            width: calc(100% - 2em);
+        }
+    }
+
+    &:hover {
+        img {
+            transform: scale(1.2); // Aplicar un zoom ligero
+            filter: brightness(50%); // Oscurece la imagen para contraste
+        }
+    }
+}
+
+.single {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+
+    img {
+        width: 100%;
+        height: auto;
+        margin: 1em 0;
+        border-radius: 1ex;
+        border: .3ex solid $color-text;
+        @include shadow-steps(8, 2px);
+    }
+
+    .gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1em;
+        margin-top: 1em;
+        img{
+            box-shadow: none;
+            margin: 0;
+        }
+    }
+
+    .desc {
+        margin: 1em 0;
+        font-size: 1.4em;
+        line-height: 1.2em;
+        color: $color-text;
+        font-family: Barlow;
+
+        .wiki-link{
+            font-size: .7em;
+            display: inline-block;
+            padding: 1ex 1em;
+            color: white;
+            background-color: darken($color-bg, 10);
+            text-transform: uppercase;
+            text-decoration: none;
+            margin: 1em 0 0 0;
+            &:hover{
+                background-color: darken($color-bg, 30);;
+            }
+        }
+    }
+
+    a {
+        color: $color-text;
+        font-size: 0.9em;
+    }
+}
+
+footer {
+
+    padding: 2em;
+    font-family: "Barlow", sans-serif;
+    text-transform: lowercase;
+
+    nav {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+
+        li {
+            display: inline;
+            margin: 1em;
+
+            a {
+                display: inline-block;
+                text-decoration: none;
+                padding: 1ex 2ex;
+                border-radius: 2ex;
+                background-color: $color-overlay;
+                color: $color-text;
+                border: .3ex solid $color-text;
+
+                &:hover {
+                    background-color: transparentize($color-text, .7);
+                }
+            }
+        }
+    }
+
+    #footerSelect{
+        text-align: center;
+        padding: 1em;
+
+        select {
+            width: 100%;
+            font-family: Barlow;
+            padding: 1ex 2ex;
+            border-radius: 2ex;
+            border: .3ex solid $color-text;
+            font-weight: 800;
+            color: $color-text;
+            background-color: $color-overlay;
+        }
+    }
+}
+
+/************************** responsive: gracefull degradation **********************************/
+
+// Media query para teléfonos horizontales
+@media (max-width: $phone-horizontal) and (min-width: ($phone-vertical + 1)) {
+    .container {
+        grid-template-columns: repeat(3, 1fr); // 2 columnas para teléfono horizontal
+    }
+    .single {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    }
+}
+
+// Media query para teléfonos verticales
+@media (max-width: $phone-vertical) {
+    .container {
+        grid-template-columns: 1fr; // 1 columna para teléfono vertical
+    }
+
+    .single {
+        grid-template-columns: 1fr;
+    }
+}
+
