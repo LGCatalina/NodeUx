@@ -1,20 +1,21 @@
 let rects = [];
 let connections = [];
+
 function setup() {
     // Crear el canvas y asignarlo a un contenedor específico
-    let canvas = createCanvas(800, 600);
+    let canvas = createCanvas(windowWidth, windowHeight);
     canvas.parent('p5-container'); // Asignar el canvas al div con ID 'p5-container'
     textFont("Bebas Neue"); // Aplicar la fuente desde Google Fonts
     textSize(40);
     rectMode(CENTER);
 
-    // Crear rectángulos con texto
-    rects.push(new RectWithText(100, 100, 150, 80, "UI"));
-    rects.push(new RectWithText(300, 100, 150, 80, "DISEÑO"));
-    rects.push(new RectWithText(500, 100, 150, 80, "UX"));
-    rects.push(new RectWithText(100, 300, 180, 100, "PATRONES\nOSCUROS"));
-    rects.push(new RectWithText(300, 300, 150, 80, "PATRONES"));
-    rects.push(new RectWithText(500, 300, 180, 100, "CAMPO\nLABORAL"));
+    // Crear rectángulos con texto (posiciones y tamaños se ajustarán en draw)
+    rects.push(new RectWithText(0, 0, 150, 80, "UI"));
+    rects.push(new RectWithText(0, 0, 150, 80, "DISEÑO"));
+    rects.push(new RectWithText(0, 0, 150, 80, "UX"));
+    rects.push(new RectWithText(0, 0, 180, 100, "PATRONES\nOSCUROS"));
+    rects.push(new RectWithText(0, 0, 150, 80, "PATRONES"));
+    rects.push(new RectWithText(0, 0, 180, 100, "CAMPO\nLABORAL"));
 
     // Definir conexiones preseleccionadas (índices de rects)
     connections.push([0, 1]); // Conectar Rect 1 con Rect 2
@@ -33,6 +34,18 @@ function setup() {
 
 function draw() {
     clear();
+
+    // Calcular espaciado dinámico
+    let hSpacing = width / 3;
+    let vSpacing = height / 3;
+
+    // Actualizar posiciones de los rectángulos
+    rects[0].setPosition(hSpacing / 2, vSpacing / 2);
+    rects[1].setPosition(hSpacing * 1.5, vSpacing / 2);
+    rects[2].setPosition(hSpacing * 2.5, vSpacing / 2);
+    rects[3].setPosition(hSpacing / 2, vSpacing * 2.5);
+    rects[4].setPosition(hSpacing * 1.5, vSpacing * 2.5);
+    rects[5].setPosition(hSpacing * 2.5, vSpacing * 2.5);
 
     // Actualizar estado de hover para cada rectángulo
     for (let rect of rects) {
@@ -96,8 +109,7 @@ class RectWithText {
         this.selected = false;
         this.hover = false; // Estado de hover
         this.selectedBgColor = [19, 132, 126]; // #13847E en formato RGB
-        this.selectedTextColor = [163, 212, 210]; // #A3D4D2 en formato RGB  
-              
+        this.selectedTextColor = [163, 212, 210]; // #A3D4D2 en formato RGB
     }
 
     display() {
@@ -133,10 +145,15 @@ class RectWithText {
     updateHoverState() {
         this.hover = this.isMouseOver();
     }
+
+    setPosition(x, y) {
+        this.x = x;
+        this.y = y;
+    }
 }
 
 function windowResized() {
     // Ajustar el tamaño del canvas cuando se redimensiona la ventana
-    let container = document.getElementById('p5-container');
-    resizeCanvas(container.offsetWidth, container.offsetHeight);
+    resizeCanvas(windowWidth, windowHeight);
 }
+

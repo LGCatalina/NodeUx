@@ -10,9 +10,17 @@ body {
     background-position: top;
 }
 
-#p5-container{
-    height: 1040px;
-    max-width: 100%;
+#p5-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+canvas {
+    display: block;
+    margin: auto;
 }
 
 
