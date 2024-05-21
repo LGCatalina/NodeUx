@@ -156,4 +156,3 @@ function windowResized() {
     // Ajustar el tamaño del canvas cuando se redimensiona la ventana
     resizeCanvas(windowWidth, windowHeight);
 }
-

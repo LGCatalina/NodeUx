@@ -17,3 +17,7 @@ function toggleContent(event) {
 document.querySelectorAll("[id^='bock_click']").forEach(function(button) {
     button.addEventListener("click", toggleContent);
 });
+
+function showAlert() {
+    alert("Tendras 7 años de mala suerte");
+}

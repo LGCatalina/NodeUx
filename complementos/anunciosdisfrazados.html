@@ -54,25 +54,42 @@
 </head>
 <body>
     <div class="container">
-        <h1>¡hola Usuario!</h1>
-        <p>Estimado usuario,</p>
-        <!-- Tarjeta de Publicación en Redes Sociales -->
-        <div class="card">
-            <h2>¡Nuevo Descubrimiento!</h2>
-            <p>¡Miren lo que encontré! Este producto es increíble y ha cambiado mi vida.</p>
-        </div>
+        <h1> ¡Alerta!</h1>
+        <p>Algo impactante sucedio!</p>
+        <p>Haga click en el boton para poder leer la noticia:</p>
+        <button id="subscribeButton" style="padding: 10px 20px; background-color: #0D5552; color: #fff; border: none; border-radius: 4px; cursor: pointer;" onclick="openAlert()">¡Ver Noticia!</button>
+        <br></br>
         <!-- Alerta de Contenido de Marca en Blogs -->
         <div class="alert">
             <p>¡Atención!</p>
             <p>El artículo que estás leyendo puede contener contenido patrocinado.</p>
             <button onclick="closeAlert(this)">Cerrar</button>
         </div>
+        <!-- Tarjeta de Publicación en Redes Sociales -->
+        <div class="card" style="display: none;" id="descubrimiento">
+            <h2>¡Nuevo Descubrimiento!</h2>
+            <p>¡Miren lo que encontré! Este producto es increíble y ha cambiado mi vida.</p>
+            <button id="subscribeButton" style="padding: 10px 20px; background-color: gray; color: #fff; border: none; border-radius: 4px; cursor: pointer;" onclick="openAlertDos()">No me interesa</button>
+            <button id="subscribeButton" style="padding: 10px 20px; background-color: #0D5552; color: #fff; border: none; border-radius: 4px; cursor: pointer;" onclick="window.location.href='../patronesoscuros.html';">¡Ver producto!</button>
+        </div>
+
+        <!-- Tarjeta de Descuento -->
+        <div class="card" style="display: none;" id="descuento">
+            <h2>INCLEIBLES OFERTAS!</h2>
+                <p>El producto más viral de internet resive ¡UN DESCUENTO!
+                </p>
+                <p>Aprovecha, solo por HOY un 30% de descuento!</p>
+                <button id="subscribeButton" style="padding: 10px 20px; background-color: gray; color: #fff; border: none; border-radius: 4px; cursor: pointer;" onclick="openAlertTres()">No me interesa</button>
+                <button id="subscribeButton" style="padding: 10px 20px; background-color: #0D5552; color: #fff; border: none; border-radius: 4px; cursor: pointer;" onclick="window.location.href='../patronesoscuros.html';">¡Ver descuento!</button>
+        </div>
+
         <!-- Tarjeta de Contenido de Marca en Blogs -->
-        <div class="card">
+        <div class="card" style="display: none;" id="marca">
             <h2>Los 10 beneficios sorprendentes de usar XYZ</h2>
             <p>Descubre por qué XYZ es el mejor producto del mercado y cómo puede mejorar tu vida.</p>
+            <button id="subscribeButton" style="padding: 10px 20px; background-color: gray; color: #fff; border: none; border-radius: 4px; cursor: pointer;" onclick="window.location.href='../patronesoscuros.html';">No me interesa</button>
+            <button id="subscribeButton" style="padding: 10px 20px; background-color: #0D5552; color: #fff; border: none; border-radius: 4px; cursor: pointer;" onclick="window.location.href='../patronesoscuros.html';">¡Ver producto!</button>
         </div>
-        <button id="subscribeButton" style="padding: 10px 20px; background-color: #0D5552; color: #fff; border: none; border-radius: 4px; cursor: pointer;" onclick="window.location.href='../patronesoscuros.html';">¡Haz clic aquí para recibir tu regalo!</button>
     </div>
 
     <script>
@@ -80,6 +97,18 @@
         function closeAlert(element) {
             var alert = element.parentElement;
             alert.style.display = 'none';
+        }
+        function openAlert() {
+            var descubrimientoDiv = document.getElementById('descubrimiento');
+            descubrimientoDiv.style.display = 'block';
+        }
+        function openAlertDos() {
+            var descubrimientoDiv = document.getElementById('descuento');
+            descubrimientoDiv.style.display = 'block';
+        }
+        function openAlertTres() {
+            var descubrimientoDiv = document.getElementById('marca');
+            descubrimientoDiv.style.display = 'block';
         }
     </script>
 </body>

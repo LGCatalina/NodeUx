@@ -62,24 +62,65 @@
             </div>
         </div>
                 
-            <!-- Contenido oculto aquí -->
+        <!-- Contenido oculto aquí -->
         <div class="contenido-oculto" id="contenido-manipulacion">
             <h2>MANIPULACIÓN</h2>
             <p>Este tipo de patrón implementa elementos psicológicos y de desviación de la atención del usuario para que realice, de manera inconsciente u forzada, acciones dirigidas hacia él interés de las empresas por sobre las del usuario. Estos patrones se manifiestan mediante  el uso de diseños confusos, engañosos y poco transparentes para la accesibilidad del usuario dentro de la plataforma.
             </p>
-            <h3>CASO DE ESTUDIO</h3>
-            <!-- Aqui va el temporizador o la pelota que va subiendo escalones -->
-            <div class="container text-center d-flex align-items-center justify-content-center" id="cuadro_interactivo12">
-                <h3 style="color: black;">hola</h3>
-            </div>
-            <h3>CASO DE ESTUDIO</h3>
-            <!-- Aqui va el temporizador o la pelota que va subiendo escalones -->
+            <h3>Desviación de la atención</h3>
+            <p>Durante una compra en línea, cuando los usuarios están a punto de realizar un pedido, el sitio web puede agregar elementos visuales llamativos o pop-ups que distraen para la finalización de la transacción. </p>
+            <!-- la pelota que va subiendo escalones -->
             <div class="container text-center d-flex align-items-center justify-content-center" id="cuadro_interactivo1">
                 <div class="loader-container">
                     <div class="loader"></div>
                     <div class="loader-text">Dark patterns, desviación de la atención del usuario de las cosas importantes</div>
                 </div>
-            </div> 
+            </div>
+            <!-- Para evitar la salida de la página -->
+            <h3>Deseas volver a cargar la página</h3>
+            <p>Para evitar la salida de la página, se abre una pestaña buscando la confirmación del usuario y lo reconsidere, este patrón se activa cuando el sistema detecta que se está a punto de abandonar el sitio web.
+            </p>
+            <div class="container text-center d-flex align-items-center justify-content-center" id="cuadro_interactivo1">
+                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop-4">
+                    Cerrar Sección.
+                </button>
+                <div class="modal fade" id="staticBackdrop-4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel-4" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel-4">Cerrar Sección.</h1>
+                            </div>
+                            <div class="modal-body text-center">
+                                <p style="padding: 0%;">¿Estás seguro/a de que quieres abandonar esta página?
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Mantener</button>
+                                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop-5">
+                                    Cerrar Sección.
+                                </button>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+                <div class="modal fade" id="staticBackdrop-5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel-5" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel-5">Cerrar Sección.</h1>
+                            </div>
+                            <div class="modal-body text-center">
+                                <p style="padding: 0%;">¿De verdad quieres salir?<br></br>Piensalo BIEN!.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Mantener</button>
+                                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar Sección</button>
+                            </div>
+                        </div>
+                    </div>    
+                </div> 
+            </div>
         </div>
 
         <!-- FILA2 -->
@@ -92,19 +133,49 @@
                 </p>
             </div>
         </div>
+
         <!-- Contenido oculto aquí -->
         <div class="contenido-oculto" id="contenido-emocional">
             <h2>MANIPULACIÓN EMOCIONAL</h2>
             <p>Estos patrones buscan influir en la toma de decisiones evocando las emociones de los usuarios. Se busca con ello motivar comportamientos y acciones beneficiosas mediante reacciones emotivas y el desarrollo de vínculos emocionales con el servicio.
             </p>
-            <h3>CASO DE ESTUDIO</h3>
-            <!-- aqui va el botón de no tocar y la alerta de spam -->
+
+            <h3>7 años de mala suerte</h3>
+            <p>Mediante la apelación de creencias y especulaciones se incita y fuerza al usuario a la realización de ciertas acciones para difundir el contenido de alguna plataforma e infundiendo miedo en caso de no hacerlas.
+            </p>
+            <div class="container text-center d-flex align-items-center justify-content-center" id="cuadro_interactivo22">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop-3">
+                    ¡ALERTA DE BENDICIÓN!
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop-3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel-3" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel-3">FELICIDADES!</h1>
+                            </div>
+                            <div class="modal-body text-center">
+                                <p style="padding: 0%;">Envía esto a tus amigos y en 5 minutos recibirás una bendición.<br><br> PD: No lo ignores o tendrás 7 años de mala suerte."
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Enviar</button>
+                                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal" onclick="showAlert()">No Enviar</button>
+                              </div>
+                        </div>
+                    </div>     
+                </div> 
+            </div>
+
+            <h3>No me interesan los niños pobres</h3>
+            <p>Mediante esta técnica, se busca evitar que el  usuario rechace una acción dentro de la plataforma indicando que negar el servicio daría un impacto negativo en los intereses y moral del usuario.
+            </p>
             <div class="container d-flex align-items-center justify-content-center " id="cuadro_interactivo2"> 
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                    ¡No tocar!
+                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    ¡HAZ CLICK Y AYUDA A LOS NIÑOS POBRES!
                 </button>
-                
                 <!-- Modal -->
                 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog">
@@ -118,16 +189,11 @@
                                     Únete a nosotros en nuestra lucha contra la pobreza.</p>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No me interesa los niños pobres</button>
+                                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">No me interesa los niños pobres</button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <h3>CASO DE ESTUDIO</h3>
-            <!-- Aqui va el temporizador o la pelota que va subiendo escalones -->
-            <div class="container text-center d-flex align-items-center justify-content-center" id="cuadro_interactivo22">
-                <h3 style="color: black;">hola</h3>
             </div>
         </div>
 
@@ -150,17 +216,22 @@
                 Se oculta información importante sobre las políticas de privacidad y se presenta poca transparencia 
                 sobre los usos y prácticas que tienen los propietarios de la plataforma con la información otorgada por los usuarios.
             </p>
-            <h3>CASO DE ESTUDIO</h3>
-            <!-- cuadrado -->
-            <!-- botón de aceptar sea grande y el contenido textual pequeño y botón de no tocar que cambie al hacer click-->
+            <h3>Cancelación de suscripción</h3>
+            <p>Se presentan trabas y una interfaz poco amigable para poder cancelar una suscripción para evitar que el usuario deje el servicio y que la empresa siga teniendo acceso a la información personal del usuario.
+            </p>>
             <div class="container d-flex align-items-center justify-content-center " id="cuadro_interactivo3">
-                <button style="padding: 10px 20px; background-color: gray; color: #fff; border: none; border-radius: 4px; cursor: pointer;" onclick="window.location.href='complementos/oscurecimientoprivacidad.html';">¿Deseas cancelar tu suscripción?</button>
-
+                <button type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal" onclick="window.location.href='complementos/oscurecimientoprivacidad.html';">
+                    ¿Deseas cancelar tu suscripción?
+                </button>
             </div>
-            <h3>CASO DE ESTUDIO</h3>
-            <!-- Aqui va el temporizador o la pelota que va subiendo escalones -->
+
+            <h3>Ventana Emergente Oculta</h3>
+            <p>Estas son una estrategia de publicidad donde al abrir una página o al interactuar dentro de su interfaz se abren instantáneamente ventanas publicitarias de dudosa procedencia y que dificultan la navegación.
+            </p>
             <div class="container text-center d-flex align-items-center justify-content-center" id="cuadro_interactivo32">
-                <h3 style="color: black;">hola</h3>
+                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal">
+                    ¡HAZ CLICK Y AYUDA A LOS NIÑOS POBRES!
+                </button>
             </div>
         </div>
 
@@ -181,35 +252,24 @@
             <h2>OCULTACIÓN DE INFORMACIÓN</h2>
             <p>Este tipo de patrón consiste en la aplicación de estrategias para limitar, 
                 ocultar o dificultar el acceso a información de utilidad para el usuario pero 
-                que podría no convenir para la empresa que el usuario conozca esta información.</p>
-            <h3>CASO DE ESTUDIO</h3>
-            <!-- LEER MÁS -->
+                que podría no convenir para la empresa que el usuario conozca esta información.
+            </p>
+            
+            <h3>Obstrucción de lectura</h3>
+            <p>Se muestra sólo una parte de la información relevante inicialmente y requiere que los usuarios seleccionen un enlace adicional o que pasen por múltiples páginas para acceder a toda la información.
+            </p>
             <div class="container d-flex align-items-center justify-content-center " id="cuadro_interactivo4">
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop-2">Leer Más</button>
-                <!-- Modal -->
-                <div class="modal fade" id="staticBackdrop-2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel-2" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="staticBackdropLabel-2">Obstrucción del Flujo</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body text-center">
-                                <p style="padding: 0%;">¡Has caído en un patrón oscuro! Su categoría es obstrucción del flujo de navegación,
-                                    este patrón crea obstáculos que dificultan realizar cierta opciones como lo hace el botón de
-                                    (leer más).</p>
-                            </div>
-                        </div>
-                    </div>     
-                </div> 
+                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" onclick="window.location.href='complementos/anunciosdisfrazados.html';">Leer Noticia</button> 
             </div>
-            <h3>CASO DE ESTUDIO</h3>
-            <!-- Aqui va el temporizador o la pelota que va subiendo escalones -->
+
+            <h3>Cookie</h3>
+            <p>Este tipo de cookie pese a que se muestran similares a las genéricas tienen el riesgo de comprometer la seguridad y privacidad del usuario rastreando sus hábitos de navegación online.
+            </p>
             <div class="container text-center d-flex align-items-center justify-content-center" id="cuadro_interactivo42">
                 <h3 style="color: black;">hola</h3>
             </div>
-        </div>   
+        </div>
+
         <!-- FILA 5 -->
         <div class="row container_doble display-flex" id="bock_click5">
             <div class="col-3" id="bock_click" data-target="contenido-suscripciones">
@@ -224,17 +284,22 @@
                 
         <!-- Contenido oculto aquí -->
         <div class="contenido-oculto " id="contenido-suscripciones">
-            <h2>SUSCRIPCIONES INVOLUNTARIAS</h2>
+            <h2>SUSCRIPCIONES INVOLUNTARIAS.</h2>
             <p>Este tipo de patrones se utilizan para la suscripción a servicios o productos mediante 
                 procesos automáticos o de vago consentimiento, aprovechándose de la falta de transparencia
-                al presentar información sobre la plataforma y servicio.</p>
-            <h3>CASO DE ESTUDIO</h3>
-                <!-- botón de suscribirse o targeta de suscripción gratis-->
-                <div class="container d-flex align-items-center justify-content-center" id="cuadro_interactivo5">
-                    <button style="padding: 10px 20px; background-color: gray; color: #fff; border: none; border-radius: 4px; cursor: pointer;" onclick="window.location.href='complementos/suscripcion.html';">¡Haz clic aquí para recibir una suscripción gratis!</button>
-                </div>
-            <h3>CASO DE ESTUDIO</h3>
-            <!-- Aqui va el temporizador o la pelota que va subiendo escalones -->
+                al presentar información sobre la plataforma y servicio.
+            </p>
+
+            <h3>Para recibir un regalo suscríbete.</h3>
+            <p>Se seduce al usuario a suscribirse a un servicio mediante una oferta o un producto de regalo, sin embargo, tienden a requerir una condición oculta que se descubre después de haberse suscrito.
+            </p>
+            <div class="container d-flex align-items-center justify-content-center" id="cuadro_interactivo5">
+                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" onclick="window.location.href='complementos/suscripcion.html';">¡Haz clic aquí para recibir una suscripción gratis!</button>
+            </div>
+
+            <h3>Prueba gratuita de nuestro servicio premium.</h3>
+            <p>Algunas empresas ofrecen pruebas gratuitas de sus servicios donde piden ingresar datos de pago para inscribirse y que, finalizando la prueba, la membresía se cobra sin consentimiento ni aviso previo.
+            </p>
             <div class="container text-center d-flex align-items-center justify-content-center" id="cuadro_interactivo52">
                 <h3 style="color: black;">hola</h3>
             </div>
@@ -258,33 +323,25 @@
             <p>Este tipo de patrón se utiliza para presionar al usuario a realizar una acción rápida y poco reflexiva
                 mediante una sensación artificial de oportunidad limitada. Estos patrones fomentan al usuario a la toma
                 compulsiva de decisiones dentro la interfaz a expensas de la realización de acciones informadas y conscientes
-                en la página y a largo plazo al posible arrepentimiento de usar el servicio ofrecido.</p>
-            <h3>CASO DE ESTUDIO</h3>
-            <!--la compra se acaba o muchos botones de descarga-->
-            <div class="container d-flex align-items-center justify-content-center " id="cuadro_interactivo6">
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop-3">
-                    !Haz click y resive una oferta especial!
-                </button>
-                
-                <!-- Modal -->
-                <div class="modal fade" id="staticBackdrop-3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel-3" aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="staticBackdropLabel-3">¡Oferta especial!</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                        <p style="padding: 0%;">"¡Oferta especial! Suscríbete ahora y obtén un 50% de descuento en tu primer mes."</P>
-                        </div>
-                    </div>
-                    </div>
-                </div> 
+                en la página y a largo plazo al posible arrepentimiento de usar el servicio ofrecido.
+            </p>
+
+            <h3>Spam Alerta de Virus.</h3>
+            <p>Se busca la acción inmediata del usuario para emplear un servicio que alerta de  un problema en su ordenador o programa, el cual generalmente es falso.
+            </p>
+            <div class="container text-center d-flex align-items-center justify-content-center" id="cuadro_interactivo6">
+                <div class="container alerta_Falsa d-block">
+                    <h2>Alerta de virus!</h2>
+                    <img src="img/warning.png" alt="Descripción de la imagen" id="BOTONventana">
+
+                    <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal">Descargar.</button> 
+                </div>
             </div>
-            <h3>CASO DE ESTUDIO</h3>
-            <!-- Aqui va el temporizador o la pelota que va subiendo escalones -->
-            <div class="container text-center d-flex align-items-center justify-content-center" id="cuadro_interactivo62">
+
+            <h3>La compra se acaba</h3>
+            <p>Dentro de un proceso de compra en la plataforma se instaura un máximo de minutos para poder completar la compra, de sobrepasar el tiempo se debe volver a hacer el proceso nuevamente.
+            </p>
+            <div class="container text-center d-flex align-items-center justify-content-center">
                 <h3 style="color: black;">hola</h3>
             </div>
         </div>                
@@ -307,13 +364,14 @@
                 involuntarias con anuncios camuflados como contenido normal o parte de la navegación. 
                 Para ello la plataforma presenta un formato de anuncios fácil de confundir, donde se confunden
                 y mezclan la apariencia de los anuncios con el contenido.</p>
-            <h3>CASO DE ESTUDIO</h3>
-            <!-- botón del area del diseño que te redireccione-->
-            <div class="container d-flex align-items-center justify-content-center" id="cuadro_interactivo7">
-                <button style="padding: 10px 20px; background-color: gray; color: #fff; border: none; border-radius: 4px; cursor: pointer;" onclick="window.location.href='complementos/anunciosdisfrazados.html';">¡Haz clic aquí para recibir INCREIBLES PREMIOS!</button>
-            </div> 
-            <h3>CASO DE ESTUDIO</h3>
-            <!-- Aqui va el temporizador o la pelota que va subiendo escalones -->
+            
+            <h3>Tarjeta de Publicidad.</h3>
+            <p>Los anuncios pueden crear contenido que lucen como artículos o noticias reales, cuando en realidad promocionan un producto o servicio.
+            </p>
+
+            <h3>Alerta de Contenido.</h3>
+            <p>Se alerta al usuario de una necesidad de tomar medidas de precaución cuando en realidad tienen como objetivo la  promoción de su servicio.
+            </p>
             <div class="container text-center d-flex align-items-center justify-content-center" id="cuadro_interactivo72">
                 <h3 style="color: black;">hola</h3>
             </div>
@@ -322,7 +380,8 @@
         <div class="parent-container d-flex justify-content-center align-items-center"> 
             <div class="containerpatterns">
                 <h3><a href="catastrodepatrones/index.html" class="link-sin-estilo">LEER MÁS</a></h3>
-            </div>   
+            </div>
+
       </div> 
     </div>
 

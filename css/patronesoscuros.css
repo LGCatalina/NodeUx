@@ -143,8 +143,8 @@ main{
   font-size: 22px;
   color: #0D5552;
 
-  padding: 60px;
-  padding-bottom: 0px !important;
+  padding: 50px;
+  padding-bottom: 10px !important;
   text-align: left;
   max-width: 100%;
 }
@@ -152,27 +152,15 @@ main{
 .contenido-oculto h3{
   font-size: 40px;
   color: #13847E;
-  padding: 40px;
-  padding-bottom: 60px;
+  padding: 50px;
+  padding-bottom: 0px !important;
 }
 
-#cuadro_interactivo1, #cuadro_interactivo12, #cuadro_interactivo2, #cuadro_interactivo22, #cuadro_interactivo3, #cuadro_interactivo32,
-#cuadro_interactivo4, #cuadro_interactivo42, #cuadro_interactivo5, #cuadro_interactivo52, #cuadro_interactivo6, #cuadro_interactivo62, #cuadro_interactivo7, #cuadro_interactivo72
-{
+.contenido-oculto .container{
   background-color: #13847E;
   width: 550px;
   height: 350px;
-}
-
-#cuadro_interactivo1, #cuadro_interactivo2, #cuadro_interactivo3, #cuadro_interactivo4, #cuadro_interactivo5, #cuadro_interactivo6, #cuadro_interactivo7
-{
-margin-bottom: 40px;
-}
-
-#cuadro_interactivo12, #cuadro_interactivo22, #cuadro_interactivo32,
-#cuadro_interactivo42, #cuadro_interactivo52, #cuadro_interactivo62, #cuadro_interactivo72
-{
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 /* Estilo del triángulo */
