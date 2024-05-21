@@ -13,6 +13,32 @@ main{
     background-color: #0D5552;
 }
 
+.rectangulopestaña {
+    width: 200px;
+    height: 50px;
+    margin-left: 81px;
+    background-color: #ffffff;
+    position: relative;
+  }
+  
+  .rectangulopestaña::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -50px; /* Ajusta la posición del triángulo */
+    width: 0;
+    height: 0px;
+    border-style: solid;
+    border-width: 52px 0 0px 52px;
+    border-color: transparent transparent transparent #ffffff;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+  }
+  
+  .rectangulopestaña:hover::after {
+    border-color: transparent transparent transparent #ffffff; /* Cambia el color del triángulo al hacer hover */
+  }
+
 #container_principal{
     min-height: 100vh;
     background-color: #ffffff;

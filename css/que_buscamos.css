@@ -1,12 +1,10 @@
 body{
     background-color: #0E1720 !important;
     margin: 0; 
-    padding: 0;
     color: #13847E;
     font-family: "Bebas Neue", sans-serif;
 }
 main{
-    margin-top: 24px;
     margin-bottom: 24px;
 }
 
@@ -14,20 +12,80 @@ main{
     background-color: #0D5552;
 }
 
+.rectangulopestaña {
+    width: 200px;
+    height: 50px;
+    margin-left: 80px;
+    background-color: #ffffff;
+    position: relative;
+  }
+  
+  .rectangulopestaña::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -50px; /* Ajusta la posición del triángulo */
+    width: 0;
+    height: 0px;
+    border-style: solid;
+    border-width: 52px 0 0px 52px;
+    border-color: transparent transparent transparent #ffffff;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+  }
+  
+  .rectangulopestaña:hover::after {
+    border-color: transparent transparent transparent #ffffff; /* Cambia el color del triángulo al hacer hover */
+  }
+
+  h1{
+    padding-top: 40px;
+    margin-left: 40px;
+    size: 50px;
+  }
+  
+  p{
+    max-width: 800px;
+    margin-bottom: 5px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: left;
+    font-family: "Nunito Sans", sans-serif;
+  }
+
 #container_principal{
     min-height: 100vh;
     background-color: #ffffff;
+    flex-wrap: wrap;
     padding: 0;
     padding-bottom: 213px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
-#container_principal .container{
-    padding: 50px;
+#container_descripcion h2{
+    size: 50px;
+    padding-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+}
+ #container_descripcion1 p{
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: left;
+    font-family: "Nunito Sans", sans-serif;
 }
 
-#container_principal .container p{
-    padding: 65px;
-    size: 22;
+#container_descripcion p{
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: left;
+    font-family: "Nunito Sans", sans-serif;
 }
+
+#img_center .container-img {
+    text-align: center;
+    justify-content: center;
+ }
