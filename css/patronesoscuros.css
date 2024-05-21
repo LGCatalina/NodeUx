@@ -52,7 +52,7 @@ main{
   margin: 0px;
 }
 
-#descripcion h2{
+#descripcion h1{
   padding: 0;
   margin: 0;
   font-size: 50px;
@@ -70,6 +70,7 @@ main{
 
 /* categorias */
 #categorias{
+  font-size: 30px;
   padding: 60px;
   padding-bottom: 0px !important;
   margin: 0px;
@@ -130,24 +131,27 @@ main{
 }
 
 .contenido-oculto h2{
-  font-size: 50;
+  color: #0D5552;
+  font-size: 50px;
   margin: 0;
 
   padding-left: 40px;
 }
 
 .contenido-oculto p{
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 22px;
+  color: #0D5552;
+
   padding: 60px;
   padding-bottom: 0px !important;
   text-align: left;
   max-width: 100%;
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 22px;
 }
 
 .contenido-oculto h3{
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 40;
+  font-size: 40px;
+  color: #13847E;
   padding: 40px;
   padding-bottom: 60px;
 }
