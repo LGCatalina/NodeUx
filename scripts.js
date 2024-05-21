@@ -2,3 +2,7 @@
 window.onbeforeunload = function() {
     return "¿Estás seguro de que quieres abandonar esta página?";
 };
+
+function scrollToTarget(targetId) {
+    document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+  }
