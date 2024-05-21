@@ -126,12 +126,23 @@ h2{
   padding-left: 40px;
 }
 
-#cuadro_interactivo1, #cuadro_interactivo2, #cuadro_interactivo3,
-#cuadro_interactivo4, #cuadro_interactivo5, #cuadro_interactivo6, #cuadro_interactivo7
+#cuadro_interactivo1, #cuadro_interactivo12, #cuadro_interactivo2, #cuadro_interactivo22, #cuadro_interactivo3, #cuadro_interactivo32,
+#cuadro_interactivo4, #cuadro_interactivo42, #cuadro_interactivo5, #cuadro_interactivo52, #cuadro_interactivo6, #cuadro_interactivo62, #cuadro_interactivo7, #cuadro_interactivo72
 {
   background-color: #13847E;
   width: 550px;
   height: 350px;
+}
+
+#cuadro_interactivo1, #cuadro_interactivo2, #cuadro_interactivo3, #cuadro_interactivo4, #cuadro_interactivo5, #cuadro_interactivo6, #cuadro_interactivo7
+{
+margin-bottom: 40px;
+}
+
+#cuadro_interactivo12, #cuadro_interactivo22, #cuadro_interactivo32,
+#cuadro_interactivo42, #cuadro_interactivo52, #cuadro_interactivo62, #cuadro_interactivo72
+{
+  margin-top: 40px;
 }
 
 /* Estilo del triángulo */
