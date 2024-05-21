@@ -22,46 +22,22 @@ main{
 }
 
 #container_principal{
-    min-height: 100vh;
     background-color: #ffffff;
-    flex-wrap: wrap;
     padding: 0px;
 }
 
-#containertitulo{
+/* descripcion */
+#container_titulo{
   padding: 0px;
-  margin: 0;
+  margin: 0px;
 }
 
-#containertitulo h1 {
-  size: 50px;
-  padding-top: 40px;
-  margin-bottom: 40px;
-  margin-left: 40px;
+#container_titulo h1{
+  padding: 0px;
+  margin: 0px;
 }
 
-#containertitulo p{
-  max-width: 800px;
-  height: 182px;
-  margin-bottom: 50px;
-  padding: 0 20px;
-  text-align: left;
-  font-family: "Nunito Sans", sans-serif;
-}
-
-#container_principal h2{
-  padding-top: 40px;
-  margin-bottom: 40px;
-  margin-left: 40px;
-}
-
-#containertitulo h3{
-  padding-top: 40px;
-  margin-bottom: 40px;
-  margin-left: 40px;
-}
-
-#container_texto p{
+#container_titulo p{
   max-width: 800px;
   margin-bottom: 5px;
   margin: 50px auto;
@@ -69,37 +45,43 @@ main{
   text-align: left;
 }
 
-#categorias h3{
-  padding-bottom: 20px;
-  margin-left: 40px;
+/* areas */
+#container_principal h2{
+  padding: 0px;
+  margin: 0px;
 }
 
-#categorias h2 {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin-left: 40px;
+/* contenido */
+.container_doble{
+  padding: 0px;
+  margin: 0px;
+  background-color: #000;
 }
 
-#categorias p {
-  width: auto;
-  padding-bottom: 60px;
-}
-
-#container_doble button{
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin-left: 40px;
-}
-
-#container_doble p{
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin-left: 40px;
-}
-
-.col-7{
-  width: 500px;
+.container_doble .col-3{
   font-family: "Nunito Sans", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  background-color: #A3D4D2;
+}
+
+.container_doble .col-3 h3{
+  font-size: 25px;
+  color: #000;
+  align-items: start;
+}
+
+.container_doble .col-9{
+  font-family: "Nunito Sans", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  background-color: #0E1720;
+}
+
+.container_doble .col-9 p{
+  font-size: 22px;
+  color: wheat;
+  align-items: start;
 }
 
 #imagen_industrial, #imagen_grafico, #imagen_interaccion{
@@ -107,36 +89,27 @@ main{
   height: 300px;
 }
 
-#bock_click1, #bock_click2, #bock_click3 {
-  padding-left: 40px;
-  margin-left: 40px;
-}
-
 /* contenido oculto */
-.contenido {
-  padding: 10px;
+.contenido-oculto {
   background-color: #A3D4D2; /* Cambia el color de fondo del contenido oculto */
   height: calc(100% - 40px);
   overflow-y: auto; /* Agrega un desplazamiento vertical si el contenido es demasiado grande */
-  margin-bottom: 20px;
 }
 
 #contenido-1, #contenido-2, #contenido-3{
   display: none;
 }
 
-.contenido-oculto{
-  background-color: #A3D4D2;
-  padding-top: 67px;
-  padding-bottom: 74px;
+.row{
+  
 }
 
-#contenido-manipulacion #contenido-emocional,
- h2{
+.contenido-oculto h3{
   font-size: 50;
   margin-left: 40px;
 }
-#contenido-manipulacion p{
+
+.contenido-oculto p{
   font-size: 22;
   padding-left: 30px;
   padding-right: 30px;
@@ -145,19 +118,6 @@ main{
   margin-left: 40px;
   font-family: "Nunito Sans", sans-serif;
 }
-#contenido-manipulacion h3{
-  font-size: 33;
-  margin-left: 40px;
-}
-
-#contenido-manipulacion #contenido-emocional,
- #cuado_interactivo{
-  background-color: #13847E;
-  max-width: 550px;
-  height: 350px;
-  margin-bottom: 30px;
-}
-
 
 /* Estilo del triángulo */
 .triangulo {
