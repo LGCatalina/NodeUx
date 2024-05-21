@@ -116,6 +116,9 @@ h1 {
   margin-bottom: 20px;
 }
 
+#contenido-1, #contenido-2{
+  display: none;
+}
 
 .contenido-oculto{
   background-color: #A3D4D2;

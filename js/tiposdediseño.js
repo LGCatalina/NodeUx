@@ -1,37 +1,19 @@
-document.getElementById("bock_click1").addEventListener("click", function() {
-    var contenidoManipulacion = document.getElementById("contenido-1");
+// Función para mostrar/ocultar contenido
+function toggleContent(event) {
+    var contentId = event.currentTarget.getAttribute('data-target');
+    var contentElement = document.getElementById(contentId);
 
-    // Verificar el estado actual del contenido de manipulación
-    if (contenidoManipulacion.style.display === "flex") {
-        // Si está visible, ocultarlo
-        contenidoManipulacion.style.display = "none";
-    } else {
-        // Si está oculto, mostrarlo
-        contenidoManipulacion.style.display = "flex";
+    // Mostrar el contenido actual si estaba oculto
+    if (contentElement.style.display === 'none' || contentElement.style.display === '') {
+        contentElement.style.display = 'block';
+    }else{
+        if (contentElement.style.display === 'block' || contentElement.style.display === '') {
+            contentElement.style.display = 'none';
+        }
     }
+}
 
-});
-document.getElementById("bock_click2").addEventListener("click", function() {
-    var contenidoEmocional = document.getElementById("contenido-2");
-
-    // Verificar el estado actual del contenido emocional
-    if (contenidoEmocional.style.display === "flex") {
-        // Si está visible, ocultarlo
-        contenidoEmocional.style.display = "none";
-    } else {
-        // Si está oculto, mostrarlo
-        contenidoEmocional.style.display = "flex";
-    }
-});
-document.getElementById("bock_click3").addEventListener("click", function() {
-    var contenidoEmocional = document.getElementById("contenido-3");
-
-    // Verificar el estado actual del contenido emocional
-    if (contenidoEmocional.style.display === "flex") {
-        // Si está visible, ocultarlo
-        contenidoEmocional.style.display = "none";
-    } else {
-        // Si está oculto, mostrarlo
-        contenidoEmocional.style.display = "flex";
-    }
+// Agregar eventos a todos los botones de clic
+document.querySelectorAll("[id^='bock_click']").forEach(function(button) {
+    button.addEventListener("click", toggleContent);
 });
