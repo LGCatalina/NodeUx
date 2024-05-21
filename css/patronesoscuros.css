@@ -157,6 +157,40 @@ margin-bottom: 40px;
   cursor: pointer;
 }
 
+/* Estilo para el contenedor padre */
+.parent-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+/* Estilo para el cuadro */
+.containerpatterns {
+  width: 160px;
+  height: 80px;
+  background-color: #A3D4D2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Asegura que el contenido dentro se alinee al centro */
+}
+
+/* Estilo para el enlace */
+.link-sin-estilo {
+  color: #0D5552; /* Cambiar color de texto a #0D5552 */
+  text-decoration: none; /* Quitar el subrayado */
+  font-size: 24px; /* Ajusta el tamaño de la fuente según sea necesario */
+  font-family: 'Bebas Neue', sans-serif; /* Asegura que uses la fuente correcta */
+  padding: 0; /* Remover cualquier padding extra */
+  line-height: 80px; /* Igual a la altura del contenedor para centrar verticalmente */
+  height: 100%; /* Ocupa toda la altura del contenedor */
+  width: 100%; /* Asegura que el enlace ocupe el ancho completo del contenedor */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 @media (max-width: 375.98px) {
 
