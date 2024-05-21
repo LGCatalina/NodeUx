@@ -43,41 +43,70 @@ main{
     background-color: #ffffff;
     flex-wrap: wrap;
     padding: 0px;
+    padding-bottom: 50px;
 }
 
 /* descripcion */
-h2{
-  padding-top: 40px;
-  margin-bottom: 40px;
-  margin-left: 40px;
-  size: 50px;
+#descripcion{
+  padding: 50px;
+  padding-bottom: 0px !important;
+  margin: 0px;
+}
+
+#descripcion h2{
+  padding: 0;
+  margin: 0;
+  font-size: 50px;
 }
 
 #descripcion p{
-  max-width: 800px;
+  height: 337px;
   margin-bottom: 5px;
-  margin: 50px auto;
-  padding: 0 20px;
   text-align: left;
+  padding: 50px;
+  padding-bottom: 0px !important;
   font-family: "Nunito Sans", sans-serif;
+  font-size: 22px;
 }
 
 /* categorias */
-.row{
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin-left: 40px;
-}
-.row h3{
-  cursor: pointer;
-
+#categorias{
+  padding: 60px;
+  padding-bottom: 0px !important;
+  margin: 0px;
 }
 
-.row p{
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin-left: 40px;
+/* contenido */
+.container_doble{
+  padding: 60px;
+  padding-bottom: 0px;
+  margin: 0px;
+}
+
+.container_doble .col-3{
   font-family: "Nunito Sans", sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+.container_doble .col-3 h3{
+  padding-right: 50px;
+  font-size: 25px;
+  align-items: start;
+  justify-content: start;
+  font-family: "Bebas Neue", sans-serif;
+  cursor: pointer;
+}
+
+.container_doble .col-9{
+  font-family: "Nunito Sans", sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+.container_doble .col-9 p{
+  font-size: 22px;
+  align-items: start;
 }
 
 /* contenido oculto */
@@ -92,34 +121,43 @@ h2{
   display: none;
 }
 
+.contenido-oculto .row{
+  padding: 40px;
+}
+
 .contenido-oculto h2{
-  font-size: 50;
-  margin-left: 40px;
+  font-size: 22;
+  padding-bottom: 50px;
+}
+
+.contenido-oculto .col-5{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.contenido-oculto .col-7{
+  text-align: left;
+  max-width: 800px;
 }
 
 .contenido-oculto p{
-  font-size: 22;
-  padding-left: 200px;
-  padding-right: 30px;
-  text-align: left;
-  max-width: 800px;
   font-family: "Nunito Sans", sans-serif;
+  font-size: 22px;
+  height: 100%; /* Asegura que p ocupe todo el ancho de col-7 */
+  width: 100%;
+  margin: 0;
+  align-content: center;
 }
 
-.contenido-oculto h3{
-  font-size: 33;
-  padding-left: 40px;
+.contenido-oculto img{
+  width: 300px;
+  height: 300px;
 }
 
-#cuadro_interactivo1, #cuadro_interactivo2, #cuadro_interactivo3,
-#cuadro_interactivo4, #cuadro_interactivo5, #cuadro_interactivo6, 
-#cuadro_interactivo7, #cuadro_interactivo8, #cuadro_interactivo9
-{
-  background-color: #13847E;
-  width: 550px;
-  height: 350px;
-}
+#contenido-9{
 
+}
 /* Estilo del triángulo */
 .triangulo {
   display: inline-block;
