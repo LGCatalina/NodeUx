@@ -1,20 +1,20 @@
 let rects = [];
 let connections = [];
-
 function setup() {
     // Crear el canvas y asignarlo a un contenedor específico
     let canvas = createCanvas(800, 600);
     canvas.parent('p5-container'); // Asignar el canvas al div con ID 'p5-container'
-    textSize(18);
+    textFont("Bebas Neue"); // Aplicar la fuente desde Google Fonts
+    textSize(40);
     rectMode(CENTER);
 
     // Crear rectángulos con texto
-    rects.push(new RectWithText(100, 100, 120, 60, "UI"));
-    rects.push(new RectWithText(300, 100, 120, 60, "DISEÑO"));
-    rects.push(new RectWithText(500, 100, 120, 60, "UX"));
-    rects.push(new RectWithText(100, 300, 120, 60, "PATRONES\nOSCUROS"));
-    rects.push(new RectWithText(300, 300, 120, 60, "PATRONES"));
-    rects.push(new RectWithText(500, 300, 120, 60, "CAMPO\nLABORAL"));
+    rects.push(new RectWithText(100, 100, 150, 80, "UI"));
+    rects.push(new RectWithText(300, 100, 150, 80, "DISEÑO"));
+    rects.push(new RectWithText(500, 100, 150, 80, "UX"));
+    rects.push(new RectWithText(100, 300, 180, 100, "PATRONES\nOSCUROS"));
+    rects.push(new RectWithText(300, 300, 150, 80, "PATRONES"));
+    rects.push(new RectWithText(500, 300, 180, 100, "CAMPO\nLABORAL"));
 
     // Definir conexiones preseleccionadas (índices de rects)
     connections.push([0, 1]); // Conectar Rect 1 con Rect 2
@@ -40,7 +40,7 @@ function draw() {
     }
 
     // Dibujar líneas entre los rectángulos seleccionados o en hover
-    stroke(0); // Cambiar el color de trazo a blanco
+    stroke(163, 212, 210); // Cambiar el color de trazo a blanco
     strokeWeight(2);
     for (let rect of rects) {
         if (rect.selected || rect.hover) {
@@ -73,7 +73,12 @@ function draw() {
 function mousePressed() {
     for (let rect of rects) {
         if (rect.isMouseOver()) {
+            // Deseleccionar todos los rectángulos antes de seleccionar el nuevo
+            for (let r of rects) {
+                r.selected = false;
+            }
             rect.toggleSelection();
+            break; // Salir del bucle una vez que se haya seleccionado un rectángulo
         }
     }
 }
@@ -90,12 +95,26 @@ class RectWithText {
         this.borderRadius = borderRadius; // Radio del borde del rectángulo
         this.selected = false;
         this.hover = false; // Estado de hover
+        this.selectedBgColor = [19, 132, 126]; // #13847E en formato RGB
+        this.selectedTextColor = [163, 212, 210]; // #A3D4D2 en formato RGB  
+              
     }
 
     display() {
-        fill(this.bgColor); // Color del rectángulo
+        // Usar colores seleccionados si el rectángulo está seleccionado
+        if (this.selected) {
+            fill(this.selectedBgColor);
+        } else {
+            fill(this.bgColor); // Color del rectángulo
+        }
         rect(this.x, this.y, this.w, this.h, this.borderRadius); // Radio del borde
-        fill(this.textColor); // Color del texto
+
+        // Usar color de texto seleccionado si el rectángulo está seleccionado
+        if (this.selected) {
+            fill(this.selectedTextColor);
+        } else {
+            fill(this.textColor);
+        }
         textAlign(CENTER, CENTER);
         text(this.text, this.x, this.y); // Coordenadas centradas
     }
