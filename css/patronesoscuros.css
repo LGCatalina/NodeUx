@@ -46,44 +46,66 @@ main{
 }
 
 /* descripcion */
-h1{
-  padding-top: 40px;
-  margin-bottom: 40px;
-  margin-left: 40px;
-  size: 50px;
+#descripcion{
+  padding: 50px;
+  padding-bottom: 0px !important;
+  margin: 0px;
 }
 
-h2{
-  padding-top: 40px;
-  margin-bottom: 40px;
-  margin-left: 40px;
-  size: 50px;
+#descripcion h2{
+  padding: 0;
+  margin: 0;
+  font-size: 50px;
 }
 
 #descripcion p{
-  max-width: 800px;
+  max-height: 722px;
   margin-bottom: 5px;
-  margin: 50px auto;
-  padding: 0 20px;
   text-align: left;
+  padding: 50px;
+  padding-bottom: 0px !important;
   font-family: "Nunito Sans", sans-serif;
+  font-size: 22px;
 }
 
 /* categorias */
-.row{
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin-left: 40px;
+#categorias{
+  padding: 60px;
+  padding-bottom: 0px !important;
+  margin: 0px;
 }
-.row h3{
+
+/* contenido */
+.container_doble{
+  padding: 60px;
+  padding-bottom: 0px;
+  margin: 0px;
+}
+
+.container_doble .col-3{
+  font-family: "Nunito Sans", sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+.container_doble .col-3 h3{
+  padding-right: 50px;
+  font-size: 25px;
+  align-items: start;
+  justify-content: start;
+  font-family: "Bebas Neue", sans-serif;
   cursor: pointer;
 }
 
-.row p{
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin-left: 40px;
+.container_doble .col-9{
   font-family: "Nunito Sans", sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+.container_doble .col-9 p{
+  font-size: 22px;
+  align-items: start;
 }
 
 #cuadro_interactivo3 h1{
@@ -99,7 +121,7 @@ h2{
 .contenido-oculto{
   background-color: #A3D4D2;
   padding-top: 67px;
-  padding-bottom: 74px;
+  padding-bottom: 130px;
 }
 
 #contenido-manipulacion, #contenido-emocional, #contenido-oscurecimiento, #contenido-informacion
@@ -109,21 +131,25 @@ h2{
 
 .contenido-oculto h2{
   font-size: 50;
-  margin-left: 40px;
+  margin: 0;
+
+  padding-left: 40px;
 }
 
 .contenido-oculto p{
-  font-size: 22;
-  padding-left: 200px;
-  padding-right: 30px;
+  padding: 60px;
+  padding-bottom: 0px !important;
   text-align: left;
-  max-width: 800px;
+  max-width: 100%;
   font-family: "Nunito Sans", sans-serif;
+  font-size: 22px;
 }
 
 .contenido-oculto h3{
-  font-size: 33;
-  padding-left: 40px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 40;
+  padding: 40px;
+  padding-bottom: 60px;
 }
 
 #cuadro_interactivo1, #cuadro_interactivo12, #cuadro_interactivo2, #cuadro_interactivo22, #cuadro_interactivo3, #cuadro_interactivo32,
@@ -155,6 +181,10 @@ margin-bottom: 40px;
   border-bottom: 5px solid #000; /* Cambia el color del triángulo si lo deseas */
   margin-left: 5px; /* Ajusta el margen según sea necesario */
   cursor: pointer;
+}
+#titulo_link{
+  padding: 60px;
+  padding-bottom: 0;
 }
 
 /* Estilo para el contenedor padre */
