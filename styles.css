@@ -5,11 +5,15 @@ body {
     padding: 0;
     background-image: url("img/fondo1.jpg");
     background-size: contain;
-    background-size: 1835px;
+    background-size: 1890px;
     background-repeat: no-repeat;
     background-position: top;
 }
 
+#p5-container{
+    height: 1040px;
+    max-width: 100%;
+}
 
 h1{
     color: rgb(255, 255, 255);
@@ -18,52 +22,6 @@ h1{
 }
 
 /* rectangulos */
-#container_principal{
-    height: 600px;
-    min-height: 100vh;
-}
-
-#row_rectangulos_1{
-    transform: translate(0px, 166px);
-}
-#row_rectangulos_2{
-    transform: translate(0px, 544px);
-}
-
-#container_principal .col{
-    display: flex;
-}
-
-#rectangulo_1 h3,
-#rectangulo_2 h3,
-#rectangulo_3 h3,
-#rectangulo_4 h3,
-#rectangulo_5 h3,
-#rectangulo_6 h3{
-
-    color: #0E1720;
-    text-align: center;
-    justify-content: center;
-    margin-top: 5px;
-}
-
-#rectangulo_1,
-#rectangulo_2,
-#rectangulo_3,
-#rectangulo_5 {
-
-    width: 120px; 
-    height: 40px; 
-    background-color: #A3D4D2; 
-    border-radius: 20px; 
-}
-
-.rectangulo {
-    width: 120px; 
-    height: 80px; 
-    background-color: #A3D4D2; 
-    border-radius: 20px; 
-}
 
 .contenedor {
     display: flex;
