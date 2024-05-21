@@ -95,6 +95,7 @@ p {
 #reactangulo .container-imagen{
     text-align: center;
     justify-content: center; 
+    padding-left: 20px; 
  }
 
 #reactangulo .cuadrado{
