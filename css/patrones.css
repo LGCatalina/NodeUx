@@ -47,6 +47,11 @@ main{
     padding-bottom: 213px;
 }
 
+#container-img{
+    justify-content: center;
+    text-align: center;
+}
+
 #container_descripcion h2{
     size: 50px;
     padding-top: 40px;
