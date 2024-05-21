@@ -47,9 +47,20 @@ main{
     padding-bottom: 213px;
 }
 
-#container-img{
-    justify-content: center;
+#reactangulo {
     text-align: center;
+}
+
+.container-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Asegúrate de que el contenedor tenga suficiente altura */
+}
+
+img {
+    max-width: 100%; /* Hace que la imagen sea responsive */
+    height: auto; /* Mantiene la proporción de la imagen */
 }
 
 #container_descripcion h2{
