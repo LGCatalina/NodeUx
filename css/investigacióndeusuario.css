@@ -133,7 +133,18 @@ p {
     width: 950px;
 }
 
+
 @media (max-width: 375.98px) {
+
+    #img_DUS {
+        width: 400px; /* Cambia este valor al tamaño deseado */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+   
+    .rectangulopestaña{
+        margin-left: -81px;
+      }
+
     #reactangulo .cuadrado{
         background-color: gray;
         height: 105px !important;
@@ -147,6 +158,7 @@ p {
 }
 
 @media (max-width: 575.98px) {
+    
     #container_descripcion h2{
         size: 40px;
     }

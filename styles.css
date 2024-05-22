@@ -219,6 +219,30 @@ h1{
         max-width: 100%;
     }
 
+    #p5-container {
+        /* Ajusta el tamaño del contenedor */
+        width: 50%; /* Cambia esto según tus necesidades */
+        padding: 10px; /* Añade espacio interno si es necesario */
+        margin: 0 auto; /* Centra el contenedor horizontalmente */
+    }
+    
+    #p5-container .cuadro {
+        /* Ajusta el tamaño de los cuadros individuales */
+        width: 100px; /* Cambia esto según tus necesidades */
+        height: 100px; /* Cambia esto según tus necesidades */
+        padding: 10px; /* Añade espacio interno si es necesario */
+        margin: 5px; /* Añade espacio entre los cuadros si es necesario */
+        /* Puedes agregar otras propiedades de estilo según tus necesidades */
+    }
+    
+    #p5-container .cuadro p {
+        /* Ajusta el tamaño del texto dentro de los cuadros */
+        font-size: 12px; /* Cambia esto según tus necesidades */
+        line-height: 1.2; /* Cambia esto según tus necesidades */
+        /* Puedes agregar otras propiedades de estilo según tus necesidades */
+    }
+    
+
     body{
         max-width: 388.98px;
     }

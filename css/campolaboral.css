@@ -190,6 +190,11 @@ main{
 }
 
 @media (max-width: 480px) {
+
+  .rectangulopestaña{
+    margin-left: 32px;
+  }
+
   #container_principal{
     max-width: 326px;
     height: 100%;

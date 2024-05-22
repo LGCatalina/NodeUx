@@ -105,11 +105,15 @@ h2 {
     margin-left: 40px;
 }
 
+.img_DUS {
+  width: 600px;
+}
+
 
 @media (max-width: 480px) {
    
   .rectangulopestaña{
-    margin-left: 32px;
+    margin-left: -81px;
   }
 
   #container_principal{
