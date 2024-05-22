@@ -134,7 +134,7 @@ p {
 }
 
 
-@media (max-width: 375.98px) {
+@media (max-width: 480px) {
 
     #img_DUS {
         width: 400px; /* Cambia este valor al tamaño deseado */
@@ -142,7 +142,7 @@ p {
     }
    
     .rectangulopestaña{
-        margin-left: -81px;
+        margin-left: 32px;
       }
 
     #reactangulo .cuadrado{
