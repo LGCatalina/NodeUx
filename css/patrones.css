@@ -167,58 +167,56 @@ h3 {
     width: 950px;
 }
 
-@media (max-width: 375.98px) {
-    #reactangulo .cuadrado{
-        background-color: gray;
-        height: 105px !important;
-        width: 165px !important;
+@media (max-width: 480px) {
+    #container_principal{
+      width: 326px;
+      height: 100%;
+      padding: 20px;
     }
-    #ventajas .cuadrado{
-        background-color: gray;
-        height: 195px !important;;
-        width: 285px !important;;
+    #descripcion {
+      padding: 40px;
+      padding-left: 20px;
+      padding-right: 20px;
     }
-}
+    #container_descripcion h1{
+        padding:0;
+        padding-top: 20px;
+        margin: 0;
+        font-size: 30px;
+    }
+    #container_descripcion p {
+        font-size: 15px;
+        padding: 0;
+        margin-top: 40px;
+    }
+    #container_descripcion h2 {
+        padding:0;
+        margin: 0;
+        font-size: 20px;
+    }
+    .mb-3 {
+        display: block;
+    }
+    .container h3{
+        margin: 0;
+        padding: 0;
+    }
+    #container_descripcion1 h3 {
+        size: 20px;
+        padding-top: 10px;
+        margin:0;
+    }
 
-@media (max-width: 575.98px) {
-    #container_descripcion h2{
-        size: 40px;
-    }
-    #container_descripcion p{
-        size: 16px;
+    #container_descripcion1 p {
+        font-size: 15px;
     }
 
-    #reactangulo .cuadrado{
-        height: 245px;
-        width: 275px;
+    #imagenes h3 {
+        size: 50px;
+        padding-top: 40px;
+        margin-bottom: 40px;
+        margin-left: 0;
+        align-items: start;
+        justify-content: start;
     }
-    #ventajas .cuadrado{
-        height: 325px;
-        width: 475px;
-    }
-}
-
-@media (max-width: 767.98px) {
-    #reactangulo .cuadrado{
-        height: 175px;
-        width: 385px;
-    }
-    #ventajas .cuadrado{
-        height: 455px;
-        width: 665px;
-    }
-}
-
-@media (max-width: 991.98px) {
-    #ventajas .cuadrado{
-        height: 550px;
-        width: 850px;
-    }
-}
-
-@media (max-width: 1199.98px) {
-    #ventajas .cuadrado{
-        height: 550px;
-        width: 850px;
-    }
-}
+  }

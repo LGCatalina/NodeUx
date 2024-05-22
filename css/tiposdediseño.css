@@ -34,7 +34,7 @@ margin-bottom: 24px;
 }
 
 .rectangulopestaña:hover::after {
-  border-color: transparent transparent transparent #ffffff; / Cambia el color del triángulo al hacer hover */
+  border-color: transparent transparent transparent #ffffff;
 }
 
 #container_principal{
@@ -76,7 +76,6 @@ margin: 0px;
 }
 
 #container_titulo p{
-  height: 182px;
   margin-bottom: 5px;
   text-align: left;
   padding: 50px;
@@ -166,42 +165,53 @@ font-size: 22px;
 }
 
 #imagen_industrial, #imagen_grafico, #imagen_interaccion{
-width: 300px;
-height: 300px;
+  width: 300px;
+  height: 300px;
 }
 
 /* Estilo del triángulo */
 .triangulo {
-display: inline-block;
-width: 0;
-height: 0;
-border-left: 5px solid transparent;
-border-right: 5px solid transparent;
-border-bottom: 5px solid #000; /* Cambia el color del triángulo si lo deseas */
-margin-left: 5px; /* Ajusta el margen según sea necesario */
-cursor: pointer;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #000;
+  margin-left: 5px;
+  cursor: pointer;
 }
 
-@media (max-width: 375.98px) {
+@media (max-width: 480px) {
+  #container_principal{
+    max-width: 326px;
+  }
+  #container_titulo h1{
+    padding-top: 20px;
+    
+  }
+  #container_titulo p {
+    max-height: 100%;
+    font-size: 15px;
+    padding: 10px;
+    padding-top: 20px;
+  }
+  #area {
+    font-size: 20px;
+    padding: 20px;
+    padding-top: 20px;
 
-}
-
-@media (max-width: 575.98px) {
-
-}
-
-@media (max-width: 767.98px) {
-
-}
-
-@media (max-width: 991.98px) {
-
-}
-
-@media (max-width: 1199.98px) {
-
-}
-
-@media (max-width: 1399.98px) {
-
+  }
+  #container_titulo {
+    padding: 20px;
+    padding-bottom: 0px !important;
+  }
+  .container_doble {
+    padding: 20px;
+  }
+  .container_doble .col-3 h3 {
+    font-size: 20px;
+  }
+  .container_doble .col-9 p {
+    font-size: 15px;
+  }
 }
