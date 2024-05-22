@@ -266,10 +266,7 @@
             <p>Este tipo de cookie pese a que se muestran similares a las genéricas tienen el riesgo de comprometer la seguridad y privacidad del usuario rastreando sus hábitos de navegación online.
             </p>
             <div class="container text-center d-flex align-items-center justify-content-center" id="cuadro_interactivo42">
-                <div class="card" id="termsCard">
-                    <p class="terms">Al hacer clic en "Aceptar", usted acepta los términos y condiciones del servicio.</p>
-                    <button class="accept-btn" onclick="acceptTerms()">Aceptar</button>
-                </div>
+                <h3 style="color: black;">hola</h3>
             </div>
         </div>
 
@@ -297,14 +294,14 @@
             <p>Se seduce al usuario a suscribirse a un servicio mediante una oferta o un producto de regalo, sin embargo, tienden a requerir una condición oculta que se descubre después de haberse suscrito.
             </p>
             <div class="container d-flex align-items-center justify-content-center" id="cuadro_interactivo5">
-                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" onclick="window.location.href='complementos/regaloSuscríbete.html';">¡Haz clic aquí para recibir REGALO!</button>
+                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" onclick="window.location.href='complementos/suscripcion.html';">¡Haz clic aquí para recibir una suscripción gratis!</button>
             </div>
 
             <h3>Prueba gratuita de nuestro servicio premium.</h3>
             <p>Algunas empresas ofrecen pruebas gratuitas de sus servicios donde piden ingresar datos de pago para inscribirse y que, finalizando la prueba, la membresía se cobra sin consentimiento ni aviso previo.
             </p>
             <div class="container text-center d-flex align-items-center justify-content-center" id="cuadro_interactivo52">
-                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" onclick="window.location.href='complementos/suscripcion.html';">¡Haz clic aquí para recibir una suscripción gratis!</button>
+                <h3 style="color: black;">hola</h3>
             </div>
         </div>
 
@@ -332,28 +329,13 @@
             <h3>Spam Alerta de Virus.</h3>
             <p>Se busca la acción inmediata del usuario para emplear un servicio que alerta de  un problema en su ordenador o programa, el cual generalmente es falso.
             </p>
-            <div class="container d-flex align-items-center justify-content-center" id="cuadro_interactivo6">
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop-6">
-                    Alerta de virus!
-                </button>
-                <!-- Modal -->
-                <div class="modal fade" id="staticBackdrop-6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel-6" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="staticBackdropLabel-6">¡ALERTA DE VIRUS!</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-dialog modal-dialog-centered">
-                                <img src="img/warning.png" alt="Descripción de la imagen" >
-                                <p style="padding: 10%;">Se ha detectado un virus!<br>¿Desea descargar un antivirus?</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Descargar.</button>
-                            </div>
-                        </div>
-                    </div>
+            <div class="container text-center d-block align-items-center justify-content-center" id="cuadro_interactivo6">
+                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" id="boton_alerta">¡ALERTA DE VIRUS!</button>
+                <div id="alerta_virus" >
+                    <h3>Alerta de virus!</h3>
+                    <img src="img/warning.png" alt="Descripción de la imagen" id="BOTONventana">
+                    <h4 id="alerta_mensaje">Se ha detectado un virus!<br>¿Desea descargar un antivirus?</h3>
+                    <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" id="boton_descargar">Descargar.</button> 
                 </div>
             </div>
 
@@ -361,7 +343,7 @@
             <p>Dentro de un proceso de compra en la plataforma se instaura un máximo de minutos para poder completar la compra, de sobrepasar el tiempo se debe volver a hacer el proceso nuevamente.
             </p>
             <div class="container text-center d-flex align-items-center justify-content-center">
-                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" onclick="window.location.href='complementos/compra_rapida.html';">¡TIENDA!</button>
+                <h3 style="color: black;">hola</h3>
             </div>
         </div>                
 
@@ -387,48 +369,21 @@
             <h3>Tarjeta de Publicidad.</h3>
             <p>Los anuncios pueden crear contenido que lucen como artículos o noticias reales, cuando en realidad promocionan un producto o servicio.
             </p>
-            <div class="container text-center d-flex align-items-center justify-content-center">
-                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" onclick="window.location.href='complementos/noticia_falsa.html';">¡Noticia Pear 15!</button>
-            </div>
 
             <h3>Alerta de Contenido.</h3>
-            <p>Se alerta al usuario de una necesidad de tomar medidas de precaución cuando en realidad tienen como objetivo la promoción de su servicio.
+            <p>Se alerta al usuario de una necesidad de tomar medidas de precaución cuando en realidad tienen como objetivo la  promoción de su servicio.
             </p>
-            <div class="container text-center d-flex align-items-center justify-content-center" id="cuadro_interactivo8">
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop-8">
-                    ¡Alerta de Oleada de Calor!
-                </button>
-                <!-- Modal -->
-                <div class="modal fade" id="staticBackdrop-8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel-8" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header d-block">
-                                <h1 class="modal-title fs-5" id="staticBackdropLabel-8">¡Atención a todos los residentes!</h1>
-                                <div class="modal-dialog modal-dialog-centered">
-                                    <p>Se pronostica una oleada de calor sin precedentes en los próximos días.
-                                         Las temperaturas se elevarán a niveles extremos,
-                                         lo que podría representar un riesgo para la salud. Es vital tomar medidas preventivas para protegerse del sol abrasador.
-                                        ¡Haga clic para comprar el mejor bloqueador solar del mercado y mantén tu piel protegida durante esta ola de calor!
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Comprar.</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="container text-center d-flex align-items-center justify-content-center" id="cuadro_interactivo72">
+                <h3 style="color: black;">hola</h3>
             </div>
         </div>
-
         <h2 id="titulo_link">CATASTRO DE PATRONES</h2>
         <div class="parent-container d-flex justify-content-center align-items-center"> 
             <div class="containerpatterns">
                 <h3><a href="catastrodepatrones/index.html" class="link-sin-estilo">LEER MÁS</a></h3>
             </div>
-        </div> 
+
+      </div> 
     </div>
 
     </main>
