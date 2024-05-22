@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página de Dark Patterns</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #222;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: #333;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        position: relative; /* Para posicionar las alertas */
+    }
+    .alert {
+        background-color: #A3D4D2;
+        color: black;
+        padding: 10px 20px;
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+    .card {
+        background-color: #444;
+        color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+    .card h2 {
+        color: #A3D4D2;
+        margin-top: 0;
+    }
+    button {
+        background-color: #13847E;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #13847E;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Robo en el Centro de Valparaíso.</h1>
+        <p>"Menores de Edad Asaltan a una Abuela en Bellavista"</p>
+        <div class="alert">
+            <p>¡Prepárate para la adrenalina con "Furia Imparable"! </p>
+            <p>Explosiones, persecuciones y acción sin límites. No podrás despegar los ojos de la pantalla.</p>
+            <button onclick="closeAlert(this)">Cerrar</button>
+        </div>
+        <p>Valparaíso, 22 de mayo de 2024 - En un lamentable incidente ocurrido ayer por la tarde, una abuela fue asaltada por un grupo de menores de edad en el sector de Bellavista, en el centro de Valparaíso.</p>
+        <!-- Tarjeta de Publicación en Redes Sociales -->
+        <div class="alert">
+            <p>¡Ya está aquí el nuevo álbum de Good Bunny!</p>
+            <p>"Euforia Infinita" - Ritmos electrizantes y letras que te harán vibrar. No te pierdas el fenómeno musical del año.
+
+                Disponible en todas las plataformas.</p>
+            <button onclick="closeAlert(this)">Cerrar</button>
+        </div>
+        <div class="alert">
+            <p>¡Descubre el futuro con el nuevo Pear 12!<br><br>Diseño elegante, cámara revolucionaria y batería que dura todo el día. ¡Lleva tu experiencia móvil al siguiente nivel!
+
+                Disponible ya en tu tienda más cercana.</p>
+            <button onclick="closeAlert(this)">Cerrar</button>
+        </div>
+        <p>El hecho ocurrió alrededor de las 17:00 horas cuando la señora, de 78 años, caminaba de regreso a su hogar. Los menores, cuya identidad se mantiene en reserva debido a su edad, la abordaron violentamente, arrebatándole su bolso y huyendo del lugar.</p>
+        <!-- Alerta de Contenido de Marca en Blogs -->
+        <div class="alert">
+            <p>Los 10 beneficios sorprendentes de usar XYZ</p>
+            <p>Descubre por qué XYZ es el mejor producto del mercado y cómo puede mejorar tu vida.</p>
+            <button onclick="closeAlert(this)">Cerrar</button>
+        </div>
+        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" onclick="window.location.href='../patronesoscuros.html';">Leer Noticia</button> 
+
+    </div>
+
+    <script>
+        // Función para cerrar la alerta
+        function closeAlert(element) {
+            var alert = element.parentElement;
+            alert.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

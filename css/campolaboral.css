@@ -79,7 +79,7 @@ main{
 }
 
 #descripcion p{
-  height: 337px;
+  max-height: 100%;
   margin-bottom: 5px;
   text-align: left;
   padding: 50px;
@@ -189,26 +189,52 @@ main{
   cursor: pointer;
 }
 
-@media (max-width: 375.98px) {
-
-}
-
-@media (max-width: 575.98px) {
-
-}
-
-@media (max-width: 767.98px) {
-
-}
-
-@media (max-width: 991.98px) {
-
-}
-
-@media (max-width: 1199.98px) {
-
-}
-
-@media (max-width: 1399.98px) {
+@media (max-width: 480px) {
+  #container_principal{
+    max-width: 326px;
+    height: 100%;
+    padding: 20px;
+    padding-top: 20px;
+  }
+  #descripcion {
+    max-height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  #descripcion p {
+    max-height: 100%;
+    padding: 0px;
+    margin-top: 40px;
+    font-size: 15px;
+  }
+  #categorias {
+    padding: 0px;
+    padding-top: 30px;
+    margin: 0px;
+    font-size: 20px;
+  }
+  .container_doble {
+    padding: 0px;
+    padding-top: 30px;
+    margin: 0px;
+    display: block !important;
+  }
+  .container_doble .col-3 h3{
+    font-size: 20px;
+    padding-right: 0px;
+  }
+  .container_doble .col-9 p {
+    font-size: 15px;
+  }
+  
+  .contenido-oculto .row {
+    padding: 0px;
+    display: block;
+  }
+  .contenido-oculto p {
+    font-size: 15px;
+    height: 100%;
+    max-width: 100%;
+  }
 
 }
