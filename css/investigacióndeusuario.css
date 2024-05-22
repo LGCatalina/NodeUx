@@ -135,9 +135,15 @@ p {
 
 
 @media (max-width: 480px) {
+    #container_principal{
+        max-width: 326px;
+        height: 100%;
+        padding: 20px;
+        padding-top: 20px;
+    }
 
     #img_DUS {
-        width: 400px; /* Cambia este valor al tamaño deseado */
+        width: 100%; /* Cambia este valor al tamaño deseado */
         height: auto; /* Mantiene la proporción de la imagen */
     }
    
@@ -154,6 +160,23 @@ p {
         background-color: gray;
         height: 195px !important;;
         width: 285px !important;;
+    }
+
+    .container, .container-fluid{
+        padding: 0px;
+    }
+    #container_descripcion p {
+        font-size: 15px;
+        padding: 0px;
+    }
+    #container_principal h2{
+        size: 50px;
+        padding-top: 20px;
+        margin:0px;
+        font-size: 20px;
+    }
+    #container_principal p {
+        font-size: 15px;
     }
 }
 

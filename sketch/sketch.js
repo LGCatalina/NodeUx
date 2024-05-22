@@ -39,6 +39,19 @@ function draw() {
     let hSpacing = width / 3;
     let vSpacing = height / 3;
 
+    // Ajustar tamaño de los rectángulos y texto si la pantalla es 480x667
+    if (windowWidth <= 480) {
+        for (let rect of rects) {
+            rect.setSize(rect.originalWidth * 0.8, rect.originalHeight * 0.8);
+        }
+        textSize(25); // Reducir el tamaño del texto
+    } else {
+        for (let rect of rects) {
+            rect.setSize(rect.originalWidth, rect.originalHeight);
+        }
+        textSize(40); // Tamaño del texto por defecto
+    }
+
     // Actualizar posiciones de los rectángulos
     rects[0].setPosition(hSpacing / 2, vSpacing / 2);
     rects[1].setPosition(hSpacing * 1.5, vSpacing / 2);
@@ -110,6 +123,8 @@ class RectWithText {
         this.hover = false; // Estado de hover
         this.selectedBgColor = [19, 132, 126]; // #13847E en formato RGB
         this.selectedTextColor = [163, 212, 210]; // #A3D4D2 en formato RGB
+        this.originalWidth = w; // Guardar el tamaño original del rectángulo
+        this.originalHeight = h; // Guardar el tamaño original del rectángulo
     }
 
     display() {
@@ -149,6 +164,11 @@ class RectWithText {
     setPosition(x, y) {
         this.x = x;
         this.y = y;
+    }
+
+    setSize(w, h) {
+        this.w = w;
+        this.h = h;
     }
 }
 
