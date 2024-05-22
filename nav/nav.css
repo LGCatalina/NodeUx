@@ -34,3 +34,49 @@
     background-color: #A5D7D7;
     color: #ffffff;
 }
+
+@media (max-width: 480px) {
+    /* Estilos para pantallas de 480px o menos (teléfonos pequeños) */
+    .navbar {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    #nav_home{
+        font-size: 40px;
+    }
+    #nav_ejemplos,
+    #nav_acerca {
+        font-size: 15px;
+    }
+}
+  
+@media (max-width: 600px) {
+      /* Estilos para pantallas de 600px o menos (teléfonos móviles) */
+}
+  
+@media (min-width: 480px) and (max-width: 768px) {
+    .navbar {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #nav_home{
+        font-size: 50px;
+    }
+    #nav_ejemplos,
+    #nav_acerca {
+        font-size: 20px;
+    }
+}
+  
+@media (max-width: 1201px) {
+    .navbar {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+}
+  
+@media (min-width: 1280px) {
+      /* Estilos para pantallas de 1201px o más (escritorios grandes) */
+  
+}

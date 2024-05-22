@@ -19,6 +19,7 @@ body {
 }
 
 canvas {
+    max-width: 100%;
     display: block;
     margin: auto;
 }
@@ -209,124 +210,108 @@ h1{
     display: flex;
 }
 
-
 #BOTONventana {
     width: 500px;
 }
 
-@media (max-width: 388.98px) {
+@media (max-width: 375px) {
+    canvas {
+        max-width: 100%;
+    }
+
     body{
         max-width: 388.98px;
     }
-    #container_principal{
-        height: 374px;
-        max-width: 264px;
-        margin: 64px;
-        padding: 0;
-    } 
-    #franja_1{
-        height: 114px;
+
+    #fondofinal{
         max-width: 100%;
     }
-    #franja_1 h2{
+    #franja_1 {
+        max-width: 100%;
+        height: 110px;
+    }
+    #franja_1 h2 {
         font-size: 40px;
-        padding: 0;
+        padding-top: 0;
+        padding-bottom: 0;
     }
-
-    #textocentral{
-        height: 648px;
-        margin: 0;
-        padding: 30px;
-        padding-top: 33px;
+    #textocentral p {
+        max-width: 800px;
     }
-    #textocentral p{
-        size: 15px;
-    }
-
-    #texto_diseño{
-        padding: 0;
-        margin: 0;
-    }
-
-    #texto_diseño .container{
-        padding: 0;
-        margin: 0;
-    }
-
-    #texto_diseño h2{
-        padding: 0;
-        margin: 0;
+    
+    #textocentral p {
         font-size: 15px;
+        line-height: 1.5;
     }
-
-    #texto_diseño .col-6 {
-        padding: 0;
-        margin: 0;
-
+    #texto_diseño h2 {
+        margin-bottom: 40px;
         font-size: 30px;
-        flex: 0 0 100%;
-        max-width: 100%;
     }
 
-    #texto_diseño #BOTONventana{
-        max-width: 313px;
-        height: 112px;
+    #BOTONventana {
+        width: 280px !important;
     }
 
-    #franja_2_contenido{
-        max-width: 100%;
-        height: 114px;
-    }
-    #franja_2 .container{
-        width: 138.25px;
-        height: 44px;
+    #franja_2 .container {
+        width: 100px;
     }
     #franja_2 .container h2 {
         font-size: 20px;
-        margin: 0px;
-        padding: 0px;
-    }
-    #objetivo h2{
-        margin: 0;
-        padding: 0;
-        font-size: 30px;
-    }
-
-    #texto{
-        
     }
 }
 
-@media (max-width: 575.98px) {
-    #franja_2_contenido{
-        max-width: 181px;
-        height: 111px;
+@media (max-width: 480px) {
+  /* Estilos para pantallas de 480px o menos (teléfonos pequeños) */
+    .row{
+        display: block;
     }
-    #textocentral p{
-        color: white;
-        font-size: 10px;
+    #franja_2 .container {
+        max-width: 135.36px;
     }
-}
-
-@media (max-width: 818px) {
-
-}
-
-@media (max-width: 991.98px) {
-
-}
-
-@media (max-width: 1199.98px) {
-    #texto_diseño .col-6 {
-        padding: 0;
-        margin: 0;
-
-        font-size: 60px;
-        flex: 0 0 100%;
+    #franja_2 .container h2 {
+        font-size: 20px;
+    }
+    #BOTONventana {
+        width: 313px;
+    }
+    #fondofinal{
         max-width: 100%;
     }
 }
 
-@media (max-width: 1399.98px) {
+@media (min-width: 480px) and (max-width: 768px) {
+    /* Estilos para pantallas de 768px o menos (tablets y móviles) */
+    #texto_diseño{
+        text-align: center;
+    }
+    .row{
+        display: block;
+    }
+    #franja_2 .container {
+        max-width: 200px;
+    }
+    #franja_2 .container h2 {
+        font-size: 40px;
+    }
+    #fondofinal{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1201px) {
+    /* Estilos para pantallas de 1201px o más (escritorios grandes) */
+    #BOTONventana{
+        width: 380px;
+    }
+    #franja_2 .container {
+        width: 280px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1280px) {
+    /* Estilos para pantallas de 1201px o más (escritorios grandes) */
 
 }
