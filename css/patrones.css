@@ -70,11 +70,19 @@ main{
     text-align: center;
 }
 
+#reactangulo h2{
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 40px;
+}
+
+
+
 .container-img {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%; /* Asegúrate de que el contenedor tenga suficiente altura */
+    height: 100%;
 }
 
 img {
@@ -97,6 +105,28 @@ img {
     font-family: "Nunito Sans", sans-serif;
   }
 
+  #container_descripcion1 h3{
+    size: 50px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+
+#container_descripcion1 h2{
+    size: 50px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+
+#container_descripcion1 p{
+    max-width: 580px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    text-align: left;
+    font-family: "Nunito Sans", sans-serif;
+  }
+
 h1 {
     size: 50px;
     padding-top: 40px;
@@ -105,6 +135,13 @@ h1 {
 }
 
 h2 {
+    size: 50px;
+    padding-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+}
+
+h3 {
     size: 50px;
     padding-top: 40px;
     margin-bottom: 40px;
