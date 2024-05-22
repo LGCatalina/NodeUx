@@ -73,6 +73,7 @@ main{
     padding-top: 40px;
     margin-bottom: 40px;
     margin-left: 40px;
+    font-size: 50px;
 }
 #container_descripcion p{
     max-width: 800px;
@@ -81,6 +82,7 @@ main{
     padding: 0 20px;
     text-align: left;
     font-family: "Nunito Sans", sans-serif;
+    font-size: 22px;
   }
 
 h1 {
@@ -95,6 +97,7 @@ h2 {
     padding-top: 40px;
     margin-bottom: 40px;
     margin-left: 40px;
+    font-size: 50px;
 }
 
 p {
@@ -104,6 +107,7 @@ p {
     padding: 0 20px;
     text-align: left;
     font-family: "Nunito Sans", sans-serif;
+    font-size: 22px;
   }
 
 #reactangulo .container-img{

@@ -74,6 +74,7 @@ main{
     text-align: center;
     margin-top: 40px;
     padding-top: 40px;
+    font-size: 50px;
 }
 
 
@@ -95,6 +96,7 @@ img {
     padding-top: 40px;
     margin-bottom: 40px;
     margin-left: 40px;
+    font-size: 50px;
 }
 #container_descripcion p{
     max-width: 800px;
@@ -103,6 +105,7 @@ img {
     padding: 0 20px;
     text-align: left;
     font-family: "Nunito Sans", sans-serif;
+    font-size: 22px;
   }
 
   #container_descripcion1 h3{
@@ -117,6 +120,7 @@ img {
     padding-top: 10px;
     margin-bottom: 10px;
     margin-left: 40px;
+    font-size: 50px;
 }
 
 #container_descripcion1 p{
@@ -125,6 +129,7 @@ img {
     margin-top: 10px;
     text-align: left;
     font-family: "Nunito Sans", sans-serif;
+    font-size: 22px;
   }
 
 h1 {
@@ -139,6 +144,7 @@ h2 {
     padding-top: 40px;
     margin-bottom: 40px;
     margin-left: 40px;
+    font-size: 50px;
 }
 
 h3 {

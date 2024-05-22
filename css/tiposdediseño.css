@@ -141,7 +141,7 @@ padding: 40px;
 }
 
 .contenido-oculto h2{
-font-size: 22;
+font-size: 50px;
 padding-bottom: 50px;
 }
 
@@ -162,6 +162,7 @@ font-size: 22px;
 height: 100%; /* Asegura que p ocupe todo el ancho de col-7 */
 width: 100%;
 margin: 0;
+font-size: 22px;
 }
 
 #imagen_industrial, #imagen_grafico, #imagen_interaccion{
