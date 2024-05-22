@@ -59,21 +59,16 @@
 </head>
 <body>
     <div class="container">
-        <h2>Prueba Gratuita de Nuestro Servicio Premium</h2>
-        <p>Obtén acceso ilimitado a todas nuestras características premium de forma gratuita durante 7 días.</p>
-        <p>Completa el formulario a continuación para comenzar tu prueba gratuita. Se requiere tarjeta de crédito.</p>
+        <h1>¡Tienes un mensaje!</h1>
+        <h3>Estimado usuario,</h3>
+        <p>¡Suscríbete ahora y recibe un regalo exclusivo de bienvenida! Descubre lo que te espera una vez que hayas dado el primer paso hacia una experiencia única. ¡No te pierdas esta oferta especial, suscríbete hoy mismo y desbloquea tu sorpresa!</p>
         <h3>Ingrese sus datos:</h3>
+
         <form action="#" method="post">
             <label for="email">Ingrese su dirección de correo electrónico:</label><br>
             <input type="email" id="email" name="email" style="margin-bottom: 10px;"><br>
             <label for="password">Cree una contraseña:</label><br>
             <input type="password" id="password" name="password" style="margin-bottom: 10px;"><br>
-            <h3>Ingrese los datos de la tarjeta:</h3>
-            <label for="expiry_date">Fecha de Vencimiento (MM/AA):</label><br>
-            <input type="text" id="expiry_date" name="expiry_date" style="margin-bottom: 10px;" maxlength="5" pattern="\d{2}/\d{2}" placeholder="MM/AA"><br>
-            
-            <label for="card_digits">Últimos dígitos del reverso:</label><br>
-            <input type="text" id="card_digits" name="card_digits" style="margin-bottom: 10px;" maxlength="4" pattern="\d{4}" placeholder="****">            
         </form>
         <button id="subscribeButton" style="padding: 10px 20px; background-color: #0D5552; color: #fff; border: none; border-radius: 4px; cursor: pointer;" onclick="window.location.href='../patronesoscuros.html';">¡Haz clic aquí para recibir tu suscripcion!</button>
     </div>
@@ -81,7 +76,7 @@
 <script>
     // Función para simular la suscripción cuando se hace clic en el botón engañoso
     document.getElementById("subscribeButton").addEventListener("click", function() {
-        alert("¡Felicidades! Has sido suscrito a nuestro servicio Premium, gracias por entregarnos sus datos.");
+        alert("¡Felicidades! Has sido suscrito a nuestro servicio, gracias por entregarnos sus datos.");
     });
 </script>
 
