@@ -207,6 +207,9 @@ main{
     margin-top: 40px;
     font-size: 15px;
   }
+  #descripcion h2{
+    font-size: 30px;
+  }
   #categorias {
     padding: 0px;
     padding-top: 30px;
@@ -218,6 +221,10 @@ main{
     padding-top: 30px;
     margin: 0px;
     display: block !important;
+  }
+  .container_doble .col-3, 
+  .container_doble .col-9 {
+    width: 100%;
   }
   .container_doble .col-3 h3{
     font-size: 20px;
@@ -231,10 +238,18 @@ main{
     padding: 0px;
     display: block;
   }
+  .contenido-oculto .col-5, 
+  .contenido-oculto .col-7
+  {
+    width: 100%;
+  }
   .contenido-oculto p {
     font-size: 15px;
     height: 100%;
     max-width: 100%;
   }
-
+  .contenido-oculto img {
+    max-width: 100%;
+    max-height: 100%;
+}
 }

@@ -247,6 +247,11 @@ main{
     display: block;
   }
   
+  .container_doble .col-3,
+  .container_doble .col-9{
+    width: 100%;
+  }
+
   .container_doble .col-3 h3 {
     padding-right: 20px;
     font-size: 25px;
@@ -255,4 +260,29 @@ main{
     font-size: 15px;
     align-items: start;
   }
+
+  .contenido-oculto {
+    padding: 20px;
+  }
+  .contenido-oculto h2 {
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .contenido-oculto p {
+    font-size: 15px;
+    padding: 0;
+    padding-top: 20px;
+    margin: 0;
+  }
+  .contenido-oculto h3 {
+    font-size: 30px;
+    padding: 0;
+    padding-top: 40px;
+    margin: 0;
+  }
+  .contenido-oculto .container {
+    width: 292px;
+    height: 222px;}
 }
