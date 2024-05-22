@@ -208,10 +208,33 @@ font-size: 22px;
   .container_doble {
     padding: 20px;
   }
+  .container_doble .col-3,
+  .container_doble .col-9{
+    width: 100%;
+  }
   .container_doble .col-3 h3 {
     font-size: 20px;
   }
   .container_doble .col-9 p {
     font-size: 15px;
   }
+  .contenido-oculto .row {
+    padding: 20px;
+  }
+  .contenido-oculto h2 {
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+  }
+  .contenido-oculto .col-5,
+  .contenido-oculto .col-7{
+    width: 100%;
+  }
+  #imagen_industrial, #imagen_grafico, #imagen_interaccion {
+    width: 200px;
+    height: 200px;
+}
+  .contenido-oculto p{
+    font-size: 15px;
+}
 }

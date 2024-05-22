@@ -210,7 +210,10 @@ h3 {
     #container_descripcion1 p {
         font-size: 15px;
     }
-
+    #container_descripcion1 .col-4,
+    #container_descripcion1 .col-8{
+        width: 100%;
+    }
     #imagenes h3 {
         size: 50px;
         padding-top: 40px;
