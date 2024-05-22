@@ -104,3 +104,61 @@ h2 {
     margin-bottom: 40px;
     margin-left: 40px;
 }
+
+
+@media (max-width: 480px) {
+   
+  .rectangulopestaña{
+    margin-left: 32px;
+  }
+
+  #container_principal{
+    max-width: 326px;
+  }
+
+  h1 {
+    padding-top: 20px;
+    margin-left: 20px;
+    font-size: 30px;
+    margin-bottom: -40px;
+}
+
+  #container_descripcion p {
+    max-height: 100%;
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  #container_descripcion1 p {
+    max-height: 100%;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.cuadrospequenyos .btn {
+  width: 150px; /* Ancho específico para los botones */
+  padding: 5px 10px; /* Ajusta el relleno según tus necesidades */
+  font-size: 14px; /* Ajusta el tamaño de la fuente si es necesario */
+}
+
+  #area {
+    font-size: 20px;
+    padding: 20px;
+    padding-top: 20px;
+
+  }
+  #container_titulo {
+    padding: 20px;
+    padding-bottom: 0px !important;
+  }
+  .container_doble {
+    padding: 20px;
+  }
+  .container_doble .col-3 h3 {
+    font-size: 20px;
+  }
+  .container_doble .col-9 p {
+    font-size: 15px;
+  }
+}
+
