@@ -38,6 +38,13 @@ h1{
     align-items: left;
 }
 
+p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.5; /* Ajustamos el espaciado entre líneas */
+    text-align: center;
+}
+
 .rectangulopestaña {
     width: 200px;
     height: 50px;
@@ -95,7 +102,7 @@ h1{
 
 #textocentral p {
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.5; /* Ajustamos el espaciado entre líneas */
 }
 
@@ -114,7 +121,7 @@ h1{
 
 #texto_diseño p{
     max-width: 492px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 #tipos,
@@ -130,7 +137,7 @@ h1{
 #campo_laboral p,
 #informacion_usuario p{
     font-family: "Nunito Sans", sans-serif;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 /* franja_2 */
@@ -203,7 +210,7 @@ h1{
     font-size: 30px;
 }
 #objetivo p{
-    font-size: 18px;
+    font-size: 20px;
 }
 
 #containerfondo {
