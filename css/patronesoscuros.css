@@ -14,7 +14,6 @@ main{
 .rectangulopestaña {
   width: 200px;
   height: 50px;
-  margin-left: 81px;
   background-color: #ffffff;
   position: relative;
 }
@@ -58,8 +57,7 @@ main{
   font-size: 50px;
 }
 
-#descripcion p{
-  max-height: 722px;
+#descripcion p{                              
   margin-bottom: 5px;
   text-align: left;
   padding: 50px;
@@ -70,22 +68,22 @@ main{
 
 /* categorias */
 #categorias{
-  font-size: 30px;
   padding: 60px;
   padding-bottom: 0px !important;
   margin: 0px;
 }
-
-p{
-  max-height: 722px;
-  margin-bottom: 5px;
-  text-align: left;
-  padding: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 0px !important;
+#categorias h2{
+  font-size: 30px;
+  padding: 0px;
+  margin: 0px;
+}
+#categorias p{
   font-family: "Nunito Sans", sans-serif;
   font-size: 22px;
+  padding: 50px;
+  padding: 0px;
+  padding-top: 50px !important;
+  margin: 0px;
 }
 
 /* contenido */
@@ -299,5 +297,21 @@ p{
   }
   .contenido-oculto .container {
     width: 292px;
-    height: 222px;}
+    height: 222px;
+  }
+}
+
+@media (max-width: 1200px){
+  #descripcion p {
+    font-size: 18px;
+  }
+  #categorias p {
+    font-size: 18px;
+  }
+  .container_doble .col-9 p {
+    font-size: 18px;
+  }
+  .container_doble .col-3 h3 {
+    font-size: 20px;
+  }
 }

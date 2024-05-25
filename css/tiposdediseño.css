@@ -14,7 +14,6 @@ margin-bottom: 24px;
 .rectangulopestaña {
   width: 200px;
   height: 50px;
-  margin-left: 80px;
   background-color: #ffffff;
   position: relative;
 }
@@ -23,7 +22,7 @@ margin-bottom: 24px;
   content: '';
   position: absolute;
   top: 50%;
-  right: -50px; 
+  right: -50px; /* Ajusta la posición del triángulo */
   width: 0;
   height: 0px;
   border-style: solid;
@@ -34,13 +33,14 @@ margin-bottom: 24px;
 }
 
 .rectangulopestaña:hover::after {
-  border-color: transparent transparent transparent #ffffff;
+  border-color: transparent transparent transparent #ffffff; /* Cambia el color del triángulo al hacer hover */
 }
 
 #container_principal{
   background-color: #ffffff;
   padding: 0px;
   padding-bottom: 60px;
+
 }
 
 /* Estilo para el contenedor principal */
@@ -65,9 +65,9 @@ margin-bottom: 24px;
 
 /* descripcion */
 #container_titulo{
-padding: 50px;
-padding-bottom: 0px !important;
-margin: 0px;
+  padding: 50px;
+  padding-bottom: 0px !important;
+  margin: 0px;
 }
 
 #container_titulo h1{
@@ -238,8 +238,14 @@ font-size: 22px;
   #imagen_industrial, #imagen_grafico, #imagen_interaccion {
     width: 200px;
     height: 200px;
+  }
+    .contenido-oculto p{
+      font-size: 15px;
+  }
 }
-  .contenido-oculto p{
-    font-size: 15px;
-}
+@media (max-width: 575px){
+  #container_principal{
+    margin-right: auto;
+    margin-left: auto;
+  }
 }

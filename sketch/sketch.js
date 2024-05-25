@@ -42,9 +42,15 @@ function draw() {
     // Ajustar tamaño de los rectángulos y texto si la pantalla es 480x667
     if (windowWidth <= 480) {
         for (let rect of rects) {
-            rect.setSize(rect.originalWidth * 0.8, rect.originalHeight * 0.8);
+            rect.setSize(rect.originalWidth * 0.6, rect.originalHeight * 0.6);
         }
         textSize(25); // Reducir el tamaño del texto
+    } else if (windowWidth <= 375) {
+        for (let rect of rects) {
+            rect.setSize(rect.originalWidth * 0.2, rect.originalHeight * 0.2);
+        }
+        textSize(18); // Reducir el tamaño del texto
+    
     } else {
         for (let rect of rects) {
             rect.setSize(rect.originalWidth, rect.originalHeight);
@@ -56,9 +62,9 @@ function draw() {
     rects[0].setPosition(hSpacing / 2, vSpacing / 2);
     rects[1].setPosition(hSpacing * 1.5, vSpacing / 2);
     rects[2].setPosition(hSpacing * 2.5, vSpacing / 2);
-    rects[3].setPosition(hSpacing / 2, vSpacing * 2.5);
-    rects[4].setPosition(hSpacing * 1.5, vSpacing * 2.5);
-    rects[5].setPosition(hSpacing * 2.5, vSpacing * 2.5);
+    rects[3].setPosition(hSpacing / 2, vSpacing * 1.5);
+    rects[4].setPosition(hSpacing * 1.5, vSpacing * 1.5);
+    rects[5].setPosition(hSpacing * 2.5, vSpacing * 1.5);
 
     // Actualizar estado de hover para cada rectángulo
     for (let rect of rects) {

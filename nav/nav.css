@@ -3,6 +3,8 @@
     height: 170px;
     padding-left: 100px;
     padding-right: 100px;
+    padding: 0px;
+    margin: 0;
     display: flex;
 }
 
@@ -59,7 +61,6 @@
     .navbar {
         padding-left: 10px;
         padding-right: 10px;
-        margin: 0;
     }
     #nav_home{
         font-size: 50px;
@@ -76,9 +77,4 @@
         padding-right: 50px;
     }
 
-}
-  
-@media (min-width: 1280px) {
-      /* Estilos para pantallas de 1201px o más (escritorios grandes) */
-  
 }
