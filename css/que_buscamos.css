@@ -44,6 +44,19 @@ main{
     size: 50px;
   }
   
+  /* Estilo para la "X" */
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 20px; 
+  color: #0D5552;
+  font-size: 40px; 
+  text-decoration: none;
+  font-family: 'Bebas Neue', sans-serif; 
+  background: white; 
+  padding: 10px; 
+}
+  
   #container_principal p{
     max-width: 800px;
     margin-bottom: 5px;

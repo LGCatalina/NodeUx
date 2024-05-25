@@ -37,19 +37,6 @@ main{
   border-color: transparent transparent transparent #ffffff; /* Cambia el color del triángulo al hacer hover */
 }
 
-/* Estilo para la "X" */
-.close-button {
-  position: absolute;
-  top: 5px;
-  right: 20px; 
-  color: #0D5552;
-  font-size: 40px; 
-  text-decoration: none;
-  font-family: 'Bebas Neue', sans-serif; 
-  background: white; 
-  padding: 10px; 
-}
-
 /* container_principal */
 #container_principal{
     min-height: 100vh;
@@ -94,6 +81,8 @@ p{
   margin-bottom: 5px;
   text-align: left;
   padding: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
   padding-bottom: 0px !important;
   font-family: "Nunito Sans", sans-serif;
   font-size: 22px;
@@ -185,8 +174,6 @@ p{
   height: 350px;
   margin-top: 50px;
 }
-
-
 
 /* Estilo del triángulo */
 .triangulo {
