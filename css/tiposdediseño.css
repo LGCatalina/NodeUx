@@ -186,10 +186,6 @@ font-size: 22px;
   .rectangulopestaña{
     margin-left: 32px;
   }
-
-  #container_principal{
-    max-width: 326px;
-  }
   #container_titulo h1{
     padding-top: 20px;
     
@@ -243,9 +239,12 @@ font-size: 22px;
       font-size: 15px;
   }
 }
-@media (max-width: 575px){
+@media (max-width: 576px){
   #container_principal{
-    margin-right: auto;
-    margin-left: auto;
+    max-width: 80%;
+  }
+  .rectangulopestaña{
+    margin-left: 10%;
+    width: 100px;
   }
 }

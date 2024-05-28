@@ -230,7 +230,6 @@ main{
   }
 
   #container_principal{
-    width: 326px;
     height: 100%;
   }
   #descripcion {
@@ -300,6 +299,17 @@ main{
     height: 222px;
   }
 }
+
+@media (max-width: 576px){
+  #container_principal{
+    max-width: 80%;
+  }
+  .rectangulopestaña{
+    margin-left: 10%;
+    width: 100px;
+  }
+} 
+
 
 @media (max-width: 1200px){
   #descripcion p {

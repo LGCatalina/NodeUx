@@ -135,15 +135,9 @@ p {
 
 @media (max-width: 480px) {
     #container_principal{
-        max-width: 326px;
         height: 100%;
         padding: 20px;
         padding-top: 20px;
-    }
-
-    #img_DUS {
-        width: 100%; /* Cambia este valor al tamaño deseado */
-        height: auto; /* Mantiene la proporción de la imagen */
     }
    
     .rectangulopestaña{
@@ -179,6 +173,16 @@ p {
     }
 }
 
+@media (max-width: 576px){
+    #container_principal{
+      max-width: 80%;
+    }
+    .rectangulopestaña{
+      margin-left: 10%;
+      width: 100px;
+    }
+  }
+
 @media (max-width: 575.98px) {
     
     #container_descripcion h2{
@@ -202,6 +206,10 @@ p {
     #reactangulo .cuadrado{
         height: 175px;
         width: 385px;
+    }
+    #img_DUS {
+        width: 100%;
+        height: auto;
     }
     #ventajas .cuadrado{
         height: 455px;

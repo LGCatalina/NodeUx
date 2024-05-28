@@ -115,10 +115,6 @@ h2 {
     margin-left: 32px;
   }
 
-  #container_principal{
-    max-width: 326px;
-  }
-
   h1 {
     padding-top: 20px;
     margin-left: 20px;
@@ -165,3 +161,12 @@ h2 {
   }
 }
 
+@media (max-width: 576px){
+  #container_principal{
+    max-width: 80%;
+  }
+  .rectangulopestaña{
+    margin-left: 10%;
+    width: 100px;
+  }
+}

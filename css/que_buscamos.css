@@ -101,10 +101,10 @@ img {
     max-width: 326px;
   }
 
-  #container_principal .p{
-    font-size: 15px !;
+  #container_principal p{
+    font-size: 15px;
   }
-  .container-img {
+  #container-img {
     display: block;
   }
   .container-img img {
@@ -113,3 +113,12 @@ img {
   }
   
 }
+@media (max-width: 576px){
+  #container_principal{
+    max-width: 80%;
+  }
+  .rectangulopestaña{
+    margin-left: 10%;
+    width: 100px;
+  }
+} 
