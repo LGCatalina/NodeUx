@@ -173,9 +173,8 @@ h3 {
       }
 
     #container_principal{
-      width: 326px;
-      height: 100%;
-      padding: 20px;
+        height: 100%;
+
     }
     #descripcion {
       padding: 40px;
@@ -227,3 +226,12 @@ h3 {
         justify-content: start;
     }
 }
+@media (max-width: 576px){
+    #container_principal{
+      max-width: 80%;
+    }
+    .rectangulopestaña{
+      margin-left: 10%;
+      width: 100px;
+    }
+  } 
